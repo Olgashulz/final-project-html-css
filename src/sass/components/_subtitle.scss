@@ -1,0 +1,15 @@
+.subtitle {
+  @include font-Titan-One (18, 21);
+  text-align: center;
+  color: var(--subtitle-color);
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    @include font-Titan-One (26, 30);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-Titan-One (30, 34);
+    letter-spacing: 0.04em;
+  }
+}

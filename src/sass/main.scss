@@ -6,12 +6,18 @@
 // Стили для файла с примером HTML-фрагмента
 // @import './example';
 
-
-
 @import './utils/vissually-hidden';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/placeholder';
 
 @import './base/common';
+@import './base/container';
 @import './base/example';
+
+@import './components/_title';
+@import './components/subtitle';
+@import './components/button';
 
 
 

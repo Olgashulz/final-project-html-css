@@ -15,6 +15,39 @@
   overflow: hidden;
 }
 
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --title-font: 'Titan One', cursive;
+  --accent-color: #d41443;
+  --title-color:#d41443;
+  --subtitle-color: #ffa5ba;
+  --text-color: #907e82;
+  --dark-text-color: #000000;
+  --white-text-color: #ffffff;
+  --bg-light-pink: #fff5f6;
+  --bg-pink: #ffb8ca;
+  --bg-light-green: #C2E297;
+  --bg-beige: #F0D1A5;
+}
+
+.button-light, .button-pink {
+  display: block;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 0.7619;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  border-color: transparent;
+  padding: 17px 37px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link {
   text-decoration: none;
 }
@@ -54,8 +87,107 @@ img {
   height: auto;
 }
 
-.example {
-  color: #74bea1;
-  font-size: 50px;
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 113px;
+    padding-right: 113px;
+  }
+}
+
+.title {
+  font-size: 34px;
+  line-height: 1.14706;
+  font-weight: 400;
+  font-family: "Titan One", cursive;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+    line-height: 1.14583;
+    font-weight: 400;
+    font-family: "Titan One", cursive;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 58px;
+    line-height: 1.13793;
+    font-weight: 400;
+    font-family: "Titan One", cursive;
+    letter-spacing: 0.06em;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.16667;
+  font-weight: 400;
+  font-family: "Titan One", cursive;
+  text-align: center;
+  color: var(--subtitle-color);
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 26px;
+    line-height: 1.15385;
+    font-weight: 400;
+    font-family: "Titan One", cursive;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 30px;
+    line-height: 1.13333;
+    font-weight: 400;
+    font-family: "Titan One", cursive;
+    letter-spacing: 0.04em;
+  }
+}
+
+.button-light {
+  color: var(--accent-color);
+  background-color: #ffffff;
+}
+
+.button-light:hover, .button-light:focus {
+  background-color: #ecebeb;
+}
+
+.button-pink {
+  background-color: #d41443;
+  color: #ffffff;
+}
+
+.button-pink:hover, .button-pink:focus {
+  background-color: #C7133E;
 }
 /*# sourceMappingURL=main.css.map */

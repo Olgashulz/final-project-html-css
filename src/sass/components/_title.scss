@@ -1,0 +1,15 @@
+.title {
+  @include font-Titan-One (34, 39);
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--title-color);
+
+  @media screen and (min-width: 768px) {
+    @include font-Titan-One (48, 55);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-Titan-One (58, 66);
+    letter-spacing: 0.06em;
+  }
+}
