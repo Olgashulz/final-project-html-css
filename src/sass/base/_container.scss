@@ -1,0 +1,21 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include for-phone-only {
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  @include for-tablet-portrait-up {
+    width: 768px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @include for-desktop-up {
+    width: 1280px;
+    padding-left: 113px;
+    padding-right: 113px;
+  }
+}

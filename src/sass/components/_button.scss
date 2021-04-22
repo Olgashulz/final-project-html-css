@@ -1,0 +1,21 @@
+.button-light {
+  @extend %button;
+  color: var(--accent-color);
+  background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button-pink {
+  @extend %button;
+  background-color: #d41443;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #C7133E;
+  }
+}
