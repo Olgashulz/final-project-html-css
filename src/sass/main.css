@@ -188,6 +188,28 @@ img {
 }
 
 .button-pink:hover, .button-pink:focus {
-  background-color: #C7133E;
+  background-color: #c7133e;
+}
+
+.button-arrow-right {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  fill: var(--accent-color);
+  border-radius: 50px;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
