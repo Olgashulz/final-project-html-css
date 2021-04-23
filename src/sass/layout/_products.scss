@@ -126,20 +126,36 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
+      background-size: 249px 252px;
       background-image: url('../images/products/mobile/cofee/pic1.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/mobile/cofee/pic1x2.png');
+      }
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
       @media screen and (min-width: 768px) {
         background-image: url('../images/products/tabl/cofee/pic1.png');
         width: 220px;
         height: 233px;
+        background-size: 220px 233px;
         transform: translate(1%, -115%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/tabl/cofee/pic1x2.png');
+        }
       }
       @media screen and (min-width: 1200px) {
         width: 337px;
         height: 335px;
+        background-size: 337px 335px;
         background-image: url('../images/products/desk/cofee/pic1.png');
         transform: translate(1%, -105%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/desk/cofee/pic1x2.png');
+        }
       }
     }
   }
@@ -170,20 +186,36 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
+      background-size: 249px 252px;
       background-image: url('../images/products/mobile/mshake/pic1.png');
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/mobile/mshake/pic1x2.png');
+      }
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
       @media screen and (min-width: 768px) {
         background-image: url('../images/products/tabl/mshake/pic1.png');
         width: 220px;
         height: 224px;
+        background-size: 220px 224px;
         transform: translate(1%, -115%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/tabl/mshake/pic1x2.png');
+        }
       }
       @media screen and (min-width: 1200px) {
         width: 335px;
         height: 335px;
+        background-size: 335px 335px;
         background-image: url('../images/products/desk/mshake/pic1.png');
         transform: translate(1%, -105%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/desk/mshake/pic1x2.png');
+        }
       }
     }
   }

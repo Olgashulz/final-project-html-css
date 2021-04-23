@@ -502,10 +502,17 @@ img {
   margin: 0 auto;
   width: 249px;
   height: 252px;
+  background-size: 249px 252px;
   background-image: url("../images/products/mobile/cofee/pic1.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(8%, -110%);
           transform: translate(8%, -110%);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products-card--coffee .products__title::before {
+    background-image: url("../images/products/mobile/cofee/pic1x2.png");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -513,8 +520,15 @@ img {
     background-image: url("../images/products/tabl/cofee/pic1.png");
     width: 220px;
     height: 233px;
+    background-size: 220px 233px;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products-card--coffee .products__title::before {
+    background-image: url("../images/products/tabl/cofee/pic1x2.png");
   }
 }
 
@@ -522,9 +536,16 @@ img {
   .products-card--coffee .products__title::before {
     width: 337px;
     height: 335px;
+    background-size: 337px 335px;
     background-image: url("../images/products/desk/cofee/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products-card--coffee .products__title::before {
+    background-image: url("../images/products/desk/cofee/pic1x2.png");
   }
 }
 
@@ -563,10 +584,17 @@ img {
   margin: 0 auto;
   width: 249px;
   height: 252px;
+  background-size: 249px 252px;
   background-image: url("../images/products/mobile/mshake/pic1.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(8%, -110%);
           transform: translate(8%, -110%);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products-card--green .products__title::before {
+    background-image: url("../images/products/mobile/mshake/pic1x2.png");
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -574,8 +602,15 @@ img {
     background-image: url("../images/products/tabl/mshake/pic1.png");
     width: 220px;
     height: 224px;
+    background-size: 220px 224px;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products-card--green .products__title::before {
+    background-image: url("../images/products/tabl/mshake/pic1x2.png");
   }
 }
 
@@ -583,9 +618,16 @@ img {
   .products-card--green .products__title::before {
     width: 335px;
     height: 335px;
+    background-size: 335px 335px;
     background-image: url("../images/products/desk/mshake/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products-card--green .products__title::before {
+    background-image: url("../images/products/desk/mshake/pic1x2.png");
   }
 }
 
