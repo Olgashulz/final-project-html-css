@@ -399,6 +399,15 @@ img {
   }
 }
 
+.products__title::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 6px;
+  height: 6px;
+  background-image: url("../images/products/mobile/circl/Ellips.png");
+}
+
 .products-card--pink {
   padding-top: 161px;
   background: var(--bg-pink);
@@ -419,7 +428,7 @@ img {
   margin: 0 auto;
   width: 249px;
   height: 252px;
-  background-size: 249px 252px;
+  background-size: cover;
   background-image: url("../images/products/mobile/cream/pic1.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(8%, -110%);
@@ -437,7 +446,7 @@ img {
     background-image: url("../images/products/tabl/cream/pic1.png");
     width: 220px;
     height: 226px;
-    background-size: 220px 226px;
+    background-size: cover;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
   }
@@ -454,7 +463,7 @@ img {
     background-image: url("../images/products/desk/cream/pic1.png");
     width: 335px;
     height: 335px;
-    background-size: 335px 335px;
+    background-size: cover;
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
   }
@@ -502,7 +511,7 @@ img {
   margin: 0 auto;
   width: 249px;
   height: 252px;
-  background-size: 249px 252px;
+  background-size: cover;
   background-image: url("../images/products/mobile/cofee/pic1.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(8%, -110%);
@@ -520,7 +529,7 @@ img {
     background-image: url("../images/products/tabl/cofee/pic1.png");
     width: 220px;
     height: 233px;
-    background-size: 220px 233px;
+    background-size: cover;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
   }
@@ -536,7 +545,7 @@ img {
   .products-card--coffee .products__title::before {
     width: 337px;
     height: 335px;
-    background-size: 337px 335px;
+    background-size: cover;
     background-image: url("../images/products/desk/cofee/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
@@ -584,7 +593,7 @@ img {
   margin: 0 auto;
   width: 249px;
   height: 252px;
-  background-size: 249px 252px;
+  background-size: cover;
   background-image: url("../images/products/mobile/mshake/pic1.png");
   background-repeat: no-repeat;
   -webkit-transform: translate(8%, -110%);
@@ -602,7 +611,7 @@ img {
     background-image: url("../images/products/tabl/mshake/pic1.png");
     width: 220px;
     height: 224px;
-    background-size: 220px 224px;
+    background-size: cover;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
   }
@@ -618,7 +627,7 @@ img {
   .products-card--green .products__title::before {
     width: 335px;
     height: 335px;
-    background-size: 335px 335px;
+    background-size: cover;
     background-image: url("../images/products/desk/mshake/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);

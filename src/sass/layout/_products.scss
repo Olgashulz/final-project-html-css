@@ -48,6 +48,16 @@
   @media screen and (min-width: 1200px) {
     @include font-Titan-One(30, 34.4);
   }
+  &::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+    background-image: url('../images/products/mobile/circl/Ellips.png');
+    // background-image: url('../images/products/mobile/circl/Ellips2.png');
+    // background-image: url('../images/products/mobile/circl/Ellips3.png');
+  }
 }
 .products-card--pink {
   padding-top: 161px;
@@ -65,7 +75,7 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
-      background-size: 249px 252px;
+      background-size: cover;
       background-image: url('../images/products/mobile/cream/pic1.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/products/mobile/cream/pic1x2.png');
@@ -76,7 +86,7 @@
         background-image: url('../images/products/tabl/cream/pic1.png');
         width: 220px;
         height: 226px;
-        background-size: 220px 226px;
+        background-size: cover;
         transform: translate(1%, -115%);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
@@ -88,7 +98,7 @@
         background-image: url('../images/products/desk/cream/pic1.png');
         width: 335px;
         height: 335px;
-        background-size: 335px 335px;
+        background-size: cover;
         transform: translate(1%, -105%);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
@@ -126,7 +136,7 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
-      background-size: 249px 252px;
+      background-size: cover;
       background-image: url('../images/products/mobile/cofee/pic1.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/products/mobile/cofee/pic1x2.png');
@@ -137,7 +147,7 @@
         background-image: url('../images/products/tabl/cofee/pic1.png');
         width: 220px;
         height: 233px;
-        background-size: 220px 233px;
+        background-size: cover;
         transform: translate(1%, -115%);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
@@ -148,7 +158,7 @@
       @media screen and (min-width: 1200px) {
         width: 337px;
         height: 335px;
-        background-size: 337px 335px;
+        background-size: cover;
         background-image: url('../images/products/desk/cofee/pic1.png');
         transform: translate(1%, -105%);
         @media screen and (min-device-pixel-ratio: 2),
@@ -186,7 +196,7 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
-      background-size: 249px 252px;
+      background-size: cover;
       background-image: url('../images/products/mobile/mshake/pic1.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/products/mobile/mshake/pic1x2.png');
@@ -197,7 +207,7 @@
         background-image: url('../images/products/tabl/mshake/pic1.png');
         width: 220px;
         height: 224px;
-        background-size: 220px 224px;
+        background-size: cover;
         transform: translate(1%, -115%);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
@@ -208,7 +218,7 @@
       @media screen and (min-width: 1200px) {
         width: 335px;
         height: 335px;
-        background-size: 335px 335px;
+        background-size: cover;
         background-image: url('../images/products/desk/mshake/pic1.png');
         transform: translate(1%, -105%);
         @media screen and (min-device-pixel-ratio: 2),
