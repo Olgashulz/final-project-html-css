@@ -1,6 +1,6 @@
 <!--header-->
 <header class="header">
-    <div class="container">
+    <div class="container header_container">
         <nav class="navigation">
             <a class="navigation__link" href="/">
                 <picture>
@@ -37,37 +37,45 @@
                 </li>
             </ul>
         </nav>
-        <button class="modal__btn" type="button" data-modal-open>Buy now</button>
+        <button class="modal__btn button-light" type="button" data-modal-open>Buy now
+            <svg class="modal__icon">
+                <use  href="./images/sprite.svg#icon-Vector" ></use>
+            </svg>
+        </button>
         
         <button type="button" class="burger-btn" data-menu-button>
-            <svg class="burger-btn__icon" width="20px" height="12px">
-                <use  href="./images/icons.svg#" ></use>
+            <svg class="burger-btn__icon">
+                <use  href="./images/sprite.svg#icon-Burger" ></use>
             </svg>
         </button>
     </div>
 <!--mobile menu-->
     <div class="mob-menu" data-menu>
         <button type="button" class="mob-close-btn" data-menu-close>
-            <svg class="mob-close-btn__icon" width="14px" height="14px">
-            <use href="./images/icons.svg#"></use>
+            <svg class="mob-close-btn__icon">
+            <use href="./images/sprite.svg#icon-close"></use>
             </svg>
         </button> 
-    <button class="modal__btn" type="button" data-modal-open>Buy now</button>
-        <ul class="menu__list list">
-            <li class="menu__item">
-                <a class="menu__link link" href="/">Home</a>
+    <button class="mob-menu__btn button-light" type="button" data-modal-open>Buy now
+        <svg class="mob-menu__icon">
+            <use  href="./images/sprite.svg#icon-Vector" ></use>
+        </svg>
+    </button>
+        <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="/">Home</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link link" href="/">About us</a>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="/">About us</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link link" href="/">How it’s made?</a>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="/">How it’s made?</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link link" href="/">Our products</a>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="/">Our products</a>
             </li>
-            <li class="menu__item">
-                <a class="menu__link link" href="/">Contact</a>
+            <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="/">Contact</a>
             </li>
         </ul>
 

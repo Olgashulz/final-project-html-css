@@ -1,0 +1,116 @@
+.header_container {
+    @include flex-center();
+    justify-content: space-between;
+    
+    position: absolute;
+    width: 100%;
+    
+    background-color: pink;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.menu__list{
+    display: none;
+}
+.modal__btn{
+    display:none;
+}
+.burger-btn{
+    @include flex-center();
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    fill: var(--title-color);
+    
+    &__icon{
+        vertical-align: middle;
+        height: 12px;
+        width: 20px;
+    }
+}
+.mob-menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    padding:60px 24px;
+    background-color: var(--bg-mobmenu);
+    transform: translateX(-100%);
+    
+    transition: transform 250ms cubic-bezier(.17,.67,.83,.67);
+    &__btn{
+        margin-bottom: 19px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        @include font-DM-Sans (16, 21, bold);
+        width: 210px;
+    }
+    &__icon{
+        margin-left: 14px;
+        width: 6px;
+        height: 10px;
+        fill: transparent; 
+    }
+    &__link{
+        @include font-DM-Sans (14, 18, bold);
+        color: var(--white-text-color);
+            &:hover,
+            &:focus {
+            color: var(--title-color);
+            }
+        }
+      &__item{
+        padding-top:12px;
+        padding-bottom:12px;
+        border-top: 1px solid var(--menu-border);
+             &:last-child{
+                border-bottom: 1px solid var(--menu-border); 
+             }
+    }  
+}
+
+.is-open{
+    transform:translateX(0);
+}
+
+.mob-close-btn{
+    @include flex-center();
+    position: absolute;
+    right: 34px;
+    top:24px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    fill: var(--title-color);
+
+    &__icon{
+        width:14px; 
+        height:14px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal__btn{
+        display: inline-block;
+        margin: 0;
+        padding: 10px 38px;
+                
+        @include font-DM-Sans (16, 21, bold);
+        width: 160px;
+    }
+    .modal__icon{
+    margin-left: 14px;
+        width: 6px;
+        height: 10px;
+        fill: transparent;
+    }
+    .header_container {
+        justify-content: flex-start;
+        padding-top: 37px;
+    }
+    .navigation{
+        margin-right: 192px;
+    }
+
+}
