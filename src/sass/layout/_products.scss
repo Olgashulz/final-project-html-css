@@ -46,6 +46,9 @@
     background-image: url('../images/products/mobile/cream/pic1.png');
     background-repeat: no-repeat;
     transform: translate(8%, -110%);
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/products/tabl/cream/pic1.png');
+    }
   }
   @media screen and (min-width: 1200px) {
     @include font-Titan-One(30, 34.4);
@@ -60,6 +63,7 @@
   margin-bottom: 130px;
 
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -90,9 +94,13 @@
       background-image: url('../images/products/mobile/cofee/pic1.png');
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/cofee/pic1.png');
+      }
     }
   }
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -123,9 +131,13 @@
       background-image: url('../images/products/mobile/mshake/pic1.png');
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/mshake/pic1.png');
+      }
     }
   }
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -139,7 +151,8 @@
   @include font-DM-Sans(14, 21.3, 700);
   padding: 30px 40px;
   @media screen and (min-width: 768px) {
-    margin: 30px 11px 40px;
+    @include font-DM-Sans(14, 25, 700);
+    // margin: 30px 11px 40px;
   }
   @media screen and (min-width: 1200px) {
     margin: 32px 44px 62px;

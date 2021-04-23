@@ -288,6 +288,12 @@ img {
           transform: translate(8%, -110%);
 }
 
+@media screen and (min-width: 768px) {
+  .products__title::before {
+    background-image: url("../images/products/tabl/cream/pic1.png");
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .products__title {
     font-size: 30px;
@@ -308,6 +314,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .products-card--pink {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -353,7 +360,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .products-card--coffee .products__title::before {
+    background-image: url("../images/products/tabl/cofee/pic1.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
   .products-card--coffee {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -398,7 +412,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .products-card--green .products__title::before {
+    background-image: url("../images/products/tabl/mshake/pic1.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
   .products-card--green {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
@@ -422,7 +443,10 @@ img {
 
 @media screen and (min-width: 768px) {
   .products-card__text {
-    margin: 30px 11px 40px;
+    font-size: 14px;
+    line-height: 1.78571;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
   }
 }
 
