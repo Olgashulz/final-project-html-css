@@ -329,6 +329,12 @@ img {
           transform: translate(8%, -110%);
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .products-card--pink .products__title::before {
+    background-image: url("../images/products/mobile/cream/pic1x2.png");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .products-card--pink .products__title::before {
     background-image: url("../images/products/tabl/cream/pic1.png");
@@ -336,6 +342,12 @@ img {
     height: 226px;
     -webkit-transform: translate(1%, -115%);
             transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products-card--pink .products__title::before {
+    background-image: url("../images/products/tabl/cream/pic1x2.png");
   }
 }
 
