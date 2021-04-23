@@ -218,6 +218,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 15px;
 }
 
 .products .title {
@@ -241,8 +242,28 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .products-card__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.products-card__item {
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .products-card__item {
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+}
+
 .products__title {
-  margin-top: 161px;
   position: relative;
   font-size: 20px;
   line-height: 1.15;
@@ -261,8 +282,8 @@ img {
   height: 252px;
   background-image: url("../images/products/mobile/cream/pic1.png");
   background-repeat: no-repeat;
-  -webkit-transform: translate(20%, -70%);
-          transform: translate(20%, -70%);
+  -webkit-transform: translate(8%, -110%);
+          transform: translate(8%, -110%);
 }
 
 @media screen and (min-width: 1200px) {
@@ -275,10 +296,12 @@ img {
 }
 
 .products-card--pink {
+  padding-top: 161px;
   background: var(--bg-pink);
   border-radius: 24px;
   width: 280px;
   height: 485px;
+  margin-bottom: 130px;
 }
 
 @media screen and (min-width: 768px) {
@@ -296,10 +319,35 @@ img {
 }
 
 .products-card--coffee {
+  padding-top: 161px;
   background: var(--bg-beige);
   border-radius: 24px;
   width: 280px;
   height: 485px;
+  margin-bottom: 130px;
+}
+
+.products-card--coffee .products__title {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: "Titan One", cursive;
+  color: var(--white-text-color);
+  text-align: center;
+}
+
+.products-card--coffee .products__title::before {
+  position: absolute;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 249px;
+  height: 252px;
+  background-image: url("../images/products/mobile/cofee/pic1.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(8%, -110%);
+          transform: translate(8%, -110%);
 }
 
 @media screen and (min-width: 768px) {
@@ -317,10 +365,34 @@ img {
 }
 
 .products-card--green {
+  padding-top: 161px;
   background: var(--bg-light-green);
   border-radius: 24px;
   width: 280px;
   height: 485px;
+}
+
+.products-card--green .products__title {
+  position: relative;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 400;
+  font-family: "Titan One", cursive;
+  color: var(--white-text-color);
+  text-align: center;
+}
+
+.products-card--green .products__title::before {
+  position: absolute;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 249px;
+  height: 252px;
+  background-image: url("../images/products/mobile/mshake/pic1.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(8%, -110%);
+          transform: translate(8%, -110%);
 }
 
 @media screen and (min-width: 768px) {
