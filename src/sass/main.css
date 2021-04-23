@@ -291,6 +291,8 @@ img {
 @media screen and (min-width: 768px) {
   .products__title::before {
     background-image: url("../images/products/tabl/cream/pic1.png");
+    -webkit-transform: translate(-5%, -105%);
+            transform: translate(-5%, -105%);
   }
 }
 
@@ -362,6 +364,8 @@ img {
 @media screen and (min-width: 768px) {
   .products-card--coffee .products__title::before {
     background-image: url("../images/products/tabl/cofee/pic1.png");
+    -webkit-transform: translate(-5%, -105%);
+            transform: translate(-5%, -105%);
   }
 }
 
@@ -414,6 +418,8 @@ img {
 @media screen and (min-width: 768px) {
   .products-card--green .products__title::before {
     background-image: url("../images/products/tabl/mshake/pic1.png");
+    -webkit-transform: translate(-5%, -105%);
+            transform: translate(-5%, -105%);
   }
 }
 

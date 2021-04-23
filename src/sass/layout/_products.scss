@@ -48,6 +48,7 @@
     transform: translate(8%, -110%);
     @media screen and (min-width: 768px) {
       background-image: url('../images/products/tabl/cream/pic1.png');
+      transform: translate(-5%, -105%);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -96,6 +97,7 @@
       transform: translate(8%, -110%);
       @media screen and (min-width: 768px) {
         background-image: url('../images/products/tabl/cofee/pic1.png');
+        transform: translate(-5%, -105%);
       }
     }
   }
@@ -133,6 +135,7 @@
       transform: translate(8%, -110%);
       @media screen and (min-width: 768px) {
         background-image: url('../images/products/tabl/mshake/pic1.png');
+        transform: translate(-5%, -105%);
       }
     }
   }
