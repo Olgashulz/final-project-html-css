@@ -1,0 +1,147 @@
+.products {
+  .subtitle {
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .title {
+    margin-bottom: 114px;
+  }
+  .button-arrow-right {
+    margin-bottom: 40px;
+    margin: auto;
+  }
+}
+.products-card {
+  @include flex-center;
+}
+.products-cards__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+}
+
+.products-card__item {
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 10px;
+    flex-basis: calc((100% - 3 * 20px) / 3);
+  }
+}
+
+.products__title {
+  position: relative;
+  @include font-Titan-One(20, 23);
+  color: var(--white-text-color);
+  text-align: center;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/mobile/cream/pic1.png');
+    background-repeat: no-repeat;
+    transform: translate(8%, -110%);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-Titan-One(30, 34.4);
+  }
+}
+.products-card--pink {
+  padding-top: 161px;
+  background: var(--bg-pink);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+  margin-bottom: 130px;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card--coffee {
+  padding-top: 161px;
+  background: var(--bg-beige);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+  margin-bottom: 130px;
+  .products__title {
+    position: relative;
+    @include font-Titan-One(20, 23);
+    color: var(--white-text-color);
+    text-align: center;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/products/mobile/cofee/pic1.png');
+      background-repeat: no-repeat;
+      transform: translate(8%, -110%);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card--green {
+  padding-top: 161px;
+  background: var(--bg-light-green);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+
+  .products__title {
+    position: relative;
+    @include font-Titan-One(20, 23);
+    color: var(--white-text-color);
+    text-align: center;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/products/mobile/mshake/pic1.png');
+      background-repeat: no-repeat;
+      transform: translate(8%, -110%);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card__text {
+  color: var(--white-text-color);
+  @include font-DM-Sans(14, 21.3, 700);
+  padding: 30px 40px;
+  @media screen and (min-width: 768px) {
+    margin: 30px 11px 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 32px 44px 62px;
+  }
+}
