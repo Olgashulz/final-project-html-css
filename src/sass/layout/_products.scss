@@ -36,21 +36,6 @@
   @include font-Titan-One(20, 23);
   color: var(--white-text-color);
   text-align: center;
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 249px;
-    height: 252px;
-    background-image: url('../images/products/mobile/cream/pic1.png');
-    background-repeat: no-repeat;
-    transform: translate(8%, -110%);
-    @media screen and (min-width: 768px) {
-      background-image: url('../images/products/tabl/cream/pic1.png');
-      transform: translate(1%, -105%);
-    }
-  }
   @media screen and (min-width: 1200px) {
     @include font-Titan-One(30, 34.4);
   }
@@ -62,6 +47,24 @@
   width: 280px;
   height: 485px;
   margin-bottom: 130px;
+  .products__title {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/products/mobile/cream/pic1.png');
+      background-repeat: no-repeat;
+      transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/cream/pic1.png');
+        transform: translate(1%, -105%);
+      }
+    }
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 152px;
@@ -69,7 +72,8 @@
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -82,9 +86,6 @@
   margin-bottom: 130px;
   .products__title {
     position: relative;
-    @include font-Titan-One(20, 23);
-    color: var(--white-text-color);
-    text-align: center;
     &::before {
       position: absolute;
       content: '';
@@ -107,7 +108,8 @@
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -120,9 +122,6 @@
 
   .products__title {
     position: relative;
-    @include font-Titan-One(20, 23);
-    color: var(--white-text-color);
-    text-align: center;
     &::before {
       position: absolute;
       content: '';
@@ -145,12 +144,15 @@
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
 .products-card__text {
   color: var(--white-text-color);
+  letter-spacing: 0.04em;
+  text-align: center;
   @include font-DM-Sans(14, 21.3, 700);
   padding: 30px 40px;
   @media screen and (min-width: 768px) {
@@ -158,6 +160,7 @@
     // margin: 30px 11px 40px;
   }
   @media screen and (min-width: 1200px) {
+    @include font-DM-Sans(16, 28, 700);
     margin: 32px 44px 62px;
   }
 }

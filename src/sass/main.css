@@ -275,27 +275,6 @@ img {
   text-align: center;
 }
 
-.products__title::before {
-  position: absolute;
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 249px;
-  height: 252px;
-  background-image: url("../images/products/mobile/cream/pic1.png");
-  background-repeat: no-repeat;
-  -webkit-transform: translate(8%, -110%);
-          transform: translate(8%, -110%);
-}
-
-@media screen and (min-width: 768px) {
-  .products__title::before {
-    background-image: url("../images/products/tabl/cream/pic1.png");
-    -webkit-transform: translate(1%, -105%);
-            transform: translate(1%, -105%);
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .products__title {
     font-size: 30px;
@@ -314,6 +293,31 @@ img {
   margin-bottom: 130px;
 }
 
+.products-card--pink .products__title {
+  position: relative;
+}
+
+.products-card--pink .products__title::before {
+  position: absolute;
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 249px;
+  height: 252px;
+  background-image: url("../images/products/mobile/cream/pic1.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(8%, -110%);
+          transform: translate(8%, -110%);
+}
+
+@media screen and (min-width: 768px) {
+  .products-card--pink .products__title::before {
+    background-image: url("../images/products/tabl/cream/pic1.png");
+    -webkit-transform: translate(1%, -105%);
+            transform: translate(1%, -105%);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .products-card--pink {
     padding-top: 152px;
@@ -324,7 +328,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products-card--pink {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -340,12 +345,6 @@ img {
 
 .products-card--coffee .products__title {
   position: relative;
-  font-size: 20px;
-  line-height: 1.15;
-  font-weight: 400;
-  font-family: "Titan One", cursive;
-  color: var(--white-text-color);
-  text-align: center;
 }
 
 .products-card--coffee .products__title::before {
@@ -379,7 +378,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products-card--coffee {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -394,12 +394,6 @@ img {
 
 .products-card--green .products__title {
   position: relative;
-  font-size: 20px;
-  line-height: 1.15;
-  font-weight: 400;
-  font-family: "Titan One", cursive;
-  color: var(--white-text-color);
-  text-align: center;
 }
 
 .products-card--green .products__title::before {
@@ -433,13 +427,16 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products-card--green {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
 
 .products-card__text {
   color: var(--white-text-color);
+  letter-spacing: 0.04em;
+  text-align: center;
   font-size: 14px;
   line-height: 1.52143;
   font-weight: 700;
@@ -458,6 +455,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .products-card__text {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
     margin: 32px 44px 62px;
   }
 }
