@@ -220,16 +220,30 @@ img {
           align-items: center;
 }
 
+.products .title {
+  margin-bottom: 114px;
+}
+
 .products .button-arrow-right {
   margin-bottom: 40px;
   margin: auto;
 }
 
-.products-cards__list {
-  margin: 0 auto;
+.products-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .products__title {
+  margin-top: 161px;
+  position: relative;
   font-size: 20px;
   line-height: 1.15;
   font-weight: 400;
@@ -239,9 +253,16 @@ img {
 }
 
 .products__title::before {
+  position: absolute;
   content: '';
   display: block;
   margin: 0 auto;
+  width: 249px;
+  height: 252px;
+  background-image: url("../images/products/mobile/cream/pic1.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translate(20%, -70%);
+          transform: translate(20%, -70%);
 }
 
 @media screen and (min-width: 1200px) {
