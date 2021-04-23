@@ -313,6 +313,18 @@ img {
 @media screen and (min-width: 768px) {
   .products-card--pink .products__title::before {
     background-image: url("../images/products/tabl/cream/pic1.png");
+    width: 220px;
+    height: 226px;
+    -webkit-transform: translate(1%, -115%);
+            transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-card--pink .products__title::before {
+    background-image: url("../images/products/desk/cream/pic1.png");
+    width: 335px;
+    height: 335px;
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
   }
@@ -363,6 +375,18 @@ img {
 @media screen and (min-width: 768px) {
   .products-card--coffee .products__title::before {
     background-image: url("../images/products/tabl/cofee/pic1.png");
+    width: 220px;
+    height: 233px;
+    -webkit-transform: translate(1%, -115%);
+            transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-card--coffee .products__title::before {
+    width: 337px;
+    height: 335px;
+    background-image: url("../images/products/desk/cofee/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
   }
@@ -412,6 +436,18 @@ img {
 @media screen and (min-width: 768px) {
   .products-card--green .products__title::before {
     background-image: url("../images/products/tabl/mshake/pic1.png");
+    width: 220px;
+    height: 224px;
+    -webkit-transform: translate(1%, -115%);
+            transform: translate(1%, -115%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-card--green .products__title::before {
+    width: 335px;
+    height: 335px;
+    background-image: url("../images/products/desk/mshake/pic1.png");
     -webkit-transform: translate(1%, -105%);
             transform: translate(1%, -105%);
   }
