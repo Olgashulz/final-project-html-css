@@ -6,6 +6,8 @@
 // Стили для файла с примером HTML-фрагмента
 // @import './example';
 
+// Это мои импорты!
+
 @import './utils/vissually-hidden';
 @import './utils/mixins';
 @import './utils/variables';
@@ -14,11 +16,14 @@
 @import './base/common';
 @import './base/container';
 
-@import './components/_title';
+@import './components/title';
 @import './components/subtitle';
 @import './components/button';
 
-@import './layouts/reviews';
+@import './layout/about';
+@import './layout/header';
+@import './layout/reviews';
 @import './layout/products';
 @import './layout/footer';
 
+// конец
