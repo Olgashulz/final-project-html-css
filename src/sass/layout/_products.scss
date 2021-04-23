@@ -65,10 +65,9 @@
       margin: 0 auto;
       width: 249px;
       height: 252px;
+      background-size: 249px 252px;
       background-image: url('../images/products/mobile/cream/pic1.png');
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/products/mobile/cream/pic1x2.png');
       }
       background-repeat: no-repeat;
@@ -77,6 +76,7 @@
         background-image: url('../images/products/tabl/cream/pic1.png');
         width: 220px;
         height: 226px;
+        background-size: 220px 226px;
         transform: translate(1%, -115%);
         @media screen and (min-device-pixel-ratio: 2),
           screen and (min-resolution: 192dpi),
@@ -88,7 +88,13 @@
         background-image: url('../images/products/desk/cream/pic1.png');
         width: 335px;
         height: 335px;
+        background-size: 335px 335px;
         transform: translate(1%, -105%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/desk/cream/pic1x2.png');
+        }
       }
     }
   }
