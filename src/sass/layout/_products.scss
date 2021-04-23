@@ -15,16 +15,19 @@
 .products-card {
   @include flex-center;
 }
-.products-card__list {
+.products-cards__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -10px;
   }
 }
+
 .products-card__item {
   padding-top: 30px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3);
+    margin: 10px;
+    flex-basis: calc((100% - 3 * 20px) / 3);
   }
 }
 
