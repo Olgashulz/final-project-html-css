@@ -1,0 +1,101 @@
+.products {
+  .subtitle {
+    display: block;
+    align-items: center;
+  }
+  .title {
+    margin-bottom: 114px;
+  }
+  .button-arrow-right {
+    margin-bottom: 40px;
+    margin: auto;
+  }
+}
+.products-card {
+  @include flex-center;
+}
+.products__title {
+  margin-top: 161px;
+  position: relative;
+  @include font-Titan-One(20, 23);
+  color: var(--white-text-color);
+  text-align: center;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/mobile/cream/pic1.png');
+    background-repeat: no-repeat;
+    transform: translate(20%, -70%);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font-Titan-One(30, 34.4);
+  }
+}
+.products-card--pink {
+  background: var(--bg-pink);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+  // &::before {
+  // position: absolute;
+  //   content: '';
+  //   display: block;
+  //   margin: 0 auto;
+  //   width: 249px;
+  //   height: 252px;
+  //   background-image: url('../images/products/mobile/cream/pic1.png');
+  //   background-repeat: no-repeat;
+  // }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card--coffee {
+  background: var(--bg-beige);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card--green {
+  background: var(--bg-light-green);
+  border-radius: 24px;
+  width: 280px;
+  height: 485px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 329px;
+    height: 525px;
+  }
+}
+.products-card__text {
+  color: var(--white-text-color);
+  @include font-DM-Sans(14, 21.3, 700);
+  padding: 30px 40px;
+  @media screen and (min-width: 768px) {
+    margin: 30px 11px 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 32px 44px 62px;
+  }
+}
