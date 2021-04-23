@@ -30,14 +30,15 @@
 }
 .mob-menu{
     position: fixed;
-    left: 0;
+    left:50%;
     top: 0;
     height: 100vh;
     width: 100vw;
+    max-width: 250px;
     z-index: 20;
     padding:60px 24px;
     background-color: var(--bg-mobmenu);
-    transform: translateX(-100%);
+    transform: translateY(100%) translateX(-50%);
     
     transition: transform 250ms cubic-bezier(.17,.67,.83,.67);
     &__btn{
@@ -72,7 +73,7 @@
 }
 
 .is-open{
-    transform:translateX(0);
+    transform:translateY(0) translateX(-50%);
 }
 
 .mob-close-btn{
@@ -91,26 +92,29 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .header_container {
+        justify-content: flex-start;
+        padding-top: 37px;
+    }
+
     .modal__btn{
         display: inline-block;
         margin: 0;
-        padding: 10px 38px;
+        padding:10px 0;
+    
                 
         @include font-DM-Sans (16, 21, bold);
         width: 160px;
     }
     .modal__icon{
-    margin-left: 14px;
+         margin-left: 14px;
         width: 6px;
         height: 10px;
         fill: transparent;
     }
-    .header_container {
-        justify-content: flex-start;
-        padding-top: 37px;
+    .mob-menu__btn{
+        width: 186px;
     }
-    .navigation{
-        margin-right: 192px;
-    }
+    
 
 }
