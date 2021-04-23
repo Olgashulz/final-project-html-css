@@ -3,6 +3,7 @@
   text-align: center;
   color: var(--subtitle-color);
   margin-bottom: 15px;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     @include font-Titan-One (26, 30);
