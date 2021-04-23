@@ -6,6 +6,9 @@
   }
   .title {
     margin-bottom: 114px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 259px;
+    }
   }
   .button-arrow-right {
     margin-bottom: 40px;
@@ -18,8 +21,11 @@
 .products-cards__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: -10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -30px;
   }
 }
 
@@ -29,6 +35,9 @@
     margin: 10px;
     flex-basis: calc((100% - 3 * 20px) / 3);
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .products__title {
@@ -36,17 +45,6 @@
   @include font-Titan-One(20, 23);
   color: var(--white-text-color);
   text-align: center;
-  &::before {
-    position: absolute;
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 249px;
-    height: 252px;
-    background-image: url('../images/products/mobile/cream/pic1.png');
-    background-repeat: no-repeat;
-    transform: translate(8%, -110%);
-  }
   @media screen and (min-width: 1200px) {
     @include font-Titan-One(30, 34.4);
   }
@@ -58,13 +56,51 @@
   width: 280px;
   height: 485px;
   margin-bottom: 130px;
+  .products__title {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/products/mobile/cream/pic1.png');
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/products/mobile/cream/pic1x2.png');
+      }
+      background-repeat: no-repeat;
+      transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/cream/pic1.png');
+        width: 220px;
+        height: 226px;
+        transform: translate(1%, -115%);
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/products/tabl/cream/pic1x2.png');
+        }
+      }
+      @media screen and (min-width: 1200px) {
+        background-image: url('../images/products/desk/cream/pic1.png');
+        width: 335px;
+        height: 335px;
+        transform: translate(1%, -105%);
+      }
+    }
+  }
 
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -77,9 +113,6 @@
   margin-bottom: 130px;
   .products__title {
     position: relative;
-    @include font-Titan-One(20, 23);
-    color: var(--white-text-color);
-    text-align: center;
     &::before {
       position: absolute;
       content: '';
@@ -90,14 +123,28 @@
       background-image: url('../images/products/mobile/cofee/pic1.png');
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/cofee/pic1.png');
+        width: 220px;
+        height: 233px;
+        transform: translate(1%, -115%);
+      }
+      @media screen and (min-width: 1200px) {
+        width: 337px;
+        height: 335px;
+        background-image: url('../images/products/desk/cofee/pic1.png');
+        transform: translate(1%, -105%);
+      }
     }
   }
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
@@ -110,9 +157,6 @@
 
   .products__title {
     position: relative;
-    @include font-Titan-One(20, 23);
-    color: var(--white-text-color);
-    text-align: center;
     &::before {
       position: absolute;
       content: '';
@@ -123,25 +167,44 @@
       background-image: url('../images/products/mobile/mshake/pic1.png');
       background-repeat: no-repeat;
       transform: translate(8%, -110%);
+      @media screen and (min-width: 768px) {
+        background-image: url('../images/products/tabl/mshake/pic1.png');
+        width: 220px;
+        height: 224px;
+        transform: translate(1%, -115%);
+      }
+      @media screen and (min-width: 1200px) {
+        width: 335px;
+        height: 335px;
+        background-image: url('../images/products/desk/mshake/pic1.png');
+        transform: translate(1%, -105%);
+      }
     }
   }
   @media screen and (min-width: 768px) {
+    padding-top: 152px;
     width: 220px;
     height: 485px;
   }
   @media screen and (min-width: 1200px) {
-    width: 329px;
+    padding-top: 163px;
+    width: 330px;
     height: 525px;
   }
 }
 .products-card__text {
   color: var(--white-text-color);
+  letter-spacing: 0.04em;
+  text-align: center;
   @include font-DM-Sans(14, 21.3, 700);
-  padding: 30px 40px;
+  margin: 30px 40px;
   @media screen and (min-width: 768px) {
-    margin: 30px 11px 40px;
+    @include font-DM-Sans(14, 25, 700);
+    margin-right: 11px;
+    margin-left: 11px;
   }
   @media screen and (min-width: 1200px) {
+    @include font-DM-Sans(16, 28, 700);
     margin: 32px 44px 62px;
   }
 }
