@@ -1,0 +1,47 @@
+.about__text-structure {
+  @include font-DM-Sans(16, 28);
+
+  margin-bottom: 30px;
+}
+
+.about__text-taste {
+  @include font-DM-Sans(14, 27);
+  color: var(--text-color);
+}
+
+.about__set {
+  @include for-tablet-portrait-up {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about__number {
+  display: block;
+  @include font-Titan-One(36, 41);
+  color: var(--title-color);
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  padding-bottom: 13px;
+
+  @include for-tablet-portrait-up {
+    @include font-Titan-One(48, 55);
+    text-transform: none;
+  }
+
+  @include for-desktop-up {
+    @include font-Titan-One(58, 66);
+    padding-bottom: 15px;
+  }
+}
+
+.about__text {
+  @include font-DM-Sans(12, 20, 700);
+  max-width: 230px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 170px;
+  }
+}

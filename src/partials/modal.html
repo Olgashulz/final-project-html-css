@@ -1,0 +1,42 @@
+<!--modal-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-btn__icon" width="14px" height="14px">
+            <use href="./images/icons.svg#icon-cake"></use>
+            </svg>
+        </button> 
+    
+        <form class="modal-form">
+            <b class="modal-form__user-data">We know how to manage with your heat</b>
+        
+            <label for="user-name" class="modal-form__field">Name</label>
+        <div class="modal-form__input-wrapper">
+            <input id="user-name" type="text" name="user-name" class="modal-form__input" minlength="2" required>
+            <svg class="modal-form__icon" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-icecream"></use>
+            </svg>
+        </div>
+        
+             <label for="user-tel" class="modal-form__field">Phone number</label>
+        <div class="modal-form__input-wrapper">  
+            <input id="user-tel" type="tel" name="use-phone"  class="modal-form__input" required 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
+            <svg class="modal-form__icon" width="13px" height="13px">
+                <use href="./images/icons.svg#icon-icecream1"></use>
+            </svg>
+        </div>
+            
+            <label for="user-email" class="modal-form__field">email</label>   
+        <div class="modal-form__input-wrapper"> 
+            <input id="user-email" type="email" name="use-email" class="modal-form__input" required>
+            <svg class="modal-form__icon" width="15px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+        </div>
+      
+            <button type="submit" class="modal-form__btn">Order</button>
+        </form>  
+    </div>
+</div>
+  

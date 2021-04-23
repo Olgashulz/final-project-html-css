@@ -3,6 +3,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--title-color);
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     @include font-Titan-One (48, 55);
