@@ -6,6 +6,9 @@
   }
   .title {
     margin-bottom: 114px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 259px;
+    }
   }
   .button-arrow-right {
     margin-bottom: 40px;
@@ -21,6 +24,9 @@
     flex-wrap: nowrap;
     margin: -10px;
   }
+  @media screen and (min-width: 1200px) {
+    margin: -30px;
+  }
 }
 
 .products-card__item {
@@ -28,6 +34,9 @@
   @media screen and (min-width: 768px) {
     margin: 10px;
     flex-basis: calc((100% - 3 * 20px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
 
@@ -178,10 +187,11 @@
   letter-spacing: 0.04em;
   text-align: center;
   @include font-DM-Sans(14, 21.3, 700);
-  padding: 30px 40px;
+  margin: 30px 40px;
   @media screen and (min-width: 768px) {
     @include font-DM-Sans(14, 25, 700);
-    // margin: 30px 11px 40px;
+    margin-right: 11px;
+    margin-left: 11px;
   }
   @media screen and (min-width: 1200px) {
     @include font-DM-Sans(16, 28, 700);
