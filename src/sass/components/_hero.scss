@@ -3,6 +3,9 @@
   padding-top: 191px;
   padding-bottom: 160px;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .hero__img--circle {
@@ -28,12 +31,6 @@
 
 .hero {
   background-color: var(--bg-pink);
-}
-
-.hero__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 
 .hero__wrapper {
