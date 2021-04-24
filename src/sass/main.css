@@ -401,11 +401,21 @@ img {
 
 .products__title::after {
   content: '';
-  display: block;
-  margin: 0 auto;
-  width: 6px;
+  position: absolute;
+  width: 26px;
   height: 6px;
-  background-image: url("../images/products/mobile/circl/Ellips.png");
+  top: 250%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../images/products/mobile/circl/Group5.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+  .products__title::after {
+    top: 150%;
+  }
 }
 
 .products-card--pink {
@@ -664,7 +674,7 @@ img {
   line-height: 1.52143;
   font-weight: 700;
   font-family: "DM Sans", sans-serif;
-  margin: 30px 40px;
+  margin: 66px 40px 30px;
 }
 
 @media screen and (min-width: 768px) {
