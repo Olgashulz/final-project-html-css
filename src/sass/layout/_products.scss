@@ -50,13 +50,17 @@
   }
   &::after {
     content: '';
-    display: block;
-    margin: 0 auto;
-    width: 6px;
+    position: absolute;
+    width: 26px;
     height: 6px;
-    background-image: url('../images/products/mobile/circl/Ellips.png');
-    // background-image: url('../images/products/mobile/circl/Ellips2.png');
-    // background-image: url('../images/products/mobile/circl/Ellips3.png');
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/products/mobile/circl/Group5.png');
+    background-repeat: no-repeat;
+    @media screen and (min-width: 1200px) {
+      top: 150%;
+    }
   }
 }
 .products-card--pink {
@@ -245,7 +249,7 @@
   letter-spacing: 0.04em;
   text-align: center;
   @include font-DM-Sans(14, 21.3, 700);
-  margin: 30px 40px;
+  margin: 66px 40px 30px;
   @media screen and (min-width: 768px) {
     @include font-DM-Sans(14, 25, 700);
     margin-right: 11px;
