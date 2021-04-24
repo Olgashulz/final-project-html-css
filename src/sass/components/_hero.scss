@@ -1,15 +1,39 @@
-// .hero__container {
-//   padding-top: 1px;
-//   padding-bottom: 1px;
-// }
-.hero {
-  background-color: var(--bg-pink);
+.hero__container {
+  position: relative;
   padding-top: 191px;
   padding-bottom: 160px;
+  overflow: hidden;
 }
+
+.hero__img--circle {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  min-width: 346px;
+  height: 344px;
+}
+
+.hero__img--icecream {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+  z-index: 0;
+}
+
+.hero__img--girl-drink-milk {
+  position: absolute;
+  bottom: 0;
+  right: 4px;
+}
+
+.hero {
+  background-color: var(--bg-pink);
+}
+
 .hero__container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .hero__wrapper {
@@ -42,13 +66,6 @@
   padding: 0;
 }
 
-// .hero__img--icecream {
-//   position: absolute;
-//   top: 92px;
-//   right: 32px;
-//   z-index: 0;
-// }
-
 .hero__left-side {
   z-index: 1;
 }
@@ -76,12 +93,16 @@
   text-align: right;
   z-index: 1;
 
+  &:not(last-chiled) {
+    margin-bottom: 15px;
+  }
+
   &::after {
     content: '';
     position: absolute;
     display: block;
     margin: 0 auto;
-    top: 0;
+    top: -2px;
     right: -10px;
     width: 16px;
     height: 16px;
@@ -105,7 +126,7 @@
 // min-width 768px
 
 @include for-tablet-portrait-up {
-  .hero {
+  .hero__container {
     padding-top: 102px;
     padding-bottom: 28px;
   }
@@ -118,6 +139,9 @@
 
   .hero__title-accent {
     @include font-Titan-One($fs: 22, $lh: 25);
+  }
+  .hero__buttons {
+    margin-bottom: 19px;
   }
 
   .hero__description {
@@ -150,12 +174,23 @@
     text-transform: none;
     text-align: right;
   }
+
+  .hero__img--circle {
+    top: 31px;
+    left: 337px;
+    min-width: 324px;
+    height: 322px;
+  }
+
+  .hero__img--icecream {
+    left: 378px;
+  }
 }
 
 // min-width 1200px
 
 @include for-desktop-up {
-  .hero {
+  .hero__container {
     padding-top: 171px;
     padding-bottom: 45px;
   }
@@ -163,18 +198,27 @@
   .hero__title {
     @include font-Titan-One($fs: 58, $lh: 52);
     max-width: 277px;
-    height: 137px;
+    min-height: 137px;
+    margin-bottom: 25px;
   }
 
   .hero__title-accent {
     @include font-Titan-One($fs: 38, $lh: 44);
   }
 
+  .hero__buttons {
+    margin-bottom: 56px;
+  }
+
+  .hero__box {
+    margin-left: 30px;
+  }
+
   .hero__description {
     @include font-DM-Sans(
       $fs: 14,
       $lh: 20,
-      $fw: 500,
+      $fw: 400,
       $ffamily: (
         'DM Sans',
         sans-serif,
@@ -186,21 +230,43 @@
   }
 
   .hero__item {
-    @include font-Titan-One($fs: 72, $lh: 77);
+    @include font-Titan-One($fs: 46, $lh: 77);
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    text-align: right;
 
     &::after {
-      right: -18px;
+      right: -15px;
+      top: 5px;
       width: 30px;
       height: 30px;
-    }
-
-    &:not(last-chiled) {
-      margin-bottom: 15px;
     }
   }
   .hero__text {
     @include font-DM-Sans($fs: 14, $lh: 18, $fw: 400);
+  }
+
+  .hero__img--circle {
+    top: 52px;
+    left: 473px;
+    width: 538px;
+    height: 538px;
+  }
+
+  .hero__img--icecream {
+    left: 592px;
+  }
+
+  .hero__img--girl-drink-mil {
+    right: -4px;
+  }
+
+  .hero .button-arrow-right {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero {
+    min-width: 1050px;
   }
 }
