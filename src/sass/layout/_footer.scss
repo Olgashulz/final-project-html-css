@@ -3,9 +3,8 @@
   &__container {
     padding-bottom: 46px;
 
-      @media screen and (min-width: 768px) {
-     padding-bottom: 91px;
-    
+    @media screen and (min-width: 768px) {
+      padding-bottom: 91px;
     }
 
     @media screen and (min-width: 768px) {
@@ -25,6 +24,8 @@
     @media screen and (min-width: 768px) {
       width: 50%;
     }
+    @media screen and (min-width: 1200px) {
+    }
   }
 
   &__subtitle {
@@ -34,6 +35,9 @@
 
     @media screen and (min-width: 768px) {
       @include font-Titan-One(26, 30);
+    }
+    @media screen and (min-width: 1200px) {
+      @include font-Titan-One(30, 34);
     }
   }
 
@@ -45,6 +49,9 @@
     @media screen and (min-width: 768px) {
       @include font-Titan-One(48, 55);
     }
+    @media screen and (min-width: 1200px) {
+      @include font-Titan-One(58, 66);
+    }
   }
   &__text {
     @include font-DM-Sans(12, 22, 700);
@@ -53,6 +60,9 @@
 
     @media screen and (min-width: 768px) {
       @include font-DM-Sans(14, 26);
+    }
+    @media screen and (min-width: 1200px) {
+      @include font-DM-Sans(15, 29, 700);
     }
   }
 
@@ -64,6 +74,9 @@
 
     @media screen and (min-width: 768px) {
       @include font-DM-Sans(14, 26);
+    }
+    @media screen and (min-width: 1200px) {
+      @include font-DM-Sans(15, 29, 700);
     }
   }
 }
@@ -98,10 +111,19 @@
   padding-top: 25px;
   padding-bottom: 25px;
   width: 152px;
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+    width: 100%;
+  }
 
   &__text {
     @include font-DM-Sans(14, 21, 700);
     color: #907e82;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include font-DM-Sans(14, 26, 700);
+    }
   }
 }
