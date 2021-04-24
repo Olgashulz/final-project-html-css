@@ -111,10 +111,10 @@
 
 .hero__buttons {
   display: flex;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
 }
 .hero__button-pink {
+  margin: 0;
   @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
   width: 63px;
   height: 24px;
@@ -123,6 +123,7 @@
 }
 
 .hero__button-light {
+  margin: 0;
   @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
   width: 83px;
   height: 24px;
@@ -302,5 +303,6 @@
     margin-right: 15px;
     align-items: center;
     text-align: center;
+    margin-right: 15px;
   }
 }
