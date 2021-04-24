@@ -1,3 +1,6 @@
+.hero {
+  background-color: var(--bg-pink);
+}
 .hero__container {
   position: relative;
   padding-top: 191px;
@@ -14,6 +17,7 @@
   left: 36px;
   min-width: 346px;
   height: 344px;
+  z-index: 0;
 }
 
 .hero__img--icecream {
@@ -27,10 +31,6 @@
   position: absolute;
   bottom: 0;
   right: 4px;
-}
-
-.hero {
-  background-color: var(--bg-pink);
 }
 
 .hero__wrapper {
@@ -109,8 +109,32 @@
   }
 }
 
+.hero__buttons {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.hero__button-pink {
+  @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
+  width: 63px;
+  height: 24px;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.hero__button-light {
+  @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
+  width: 83px;
+  height: 24px;
+  align-items: center;
+}
+
 // @include for-phone-only {
 @media screen and (max-width: 767px) {
+  .hero__container {
+    height: 502px;
+  }
+
   .hero__wrapper {
     display: none;
   }
@@ -263,7 +287,20 @@
     height: 26px;
   }
 
-  .hero {
-    min-width: 1050px;
+  .hero__button-light {
+    @include font-DM-Sans($fs: 14, $lh: 18);
+    width: 138px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__button-pink {
+    @include font-DM-Sans($fs: 14, $lh: 18);
+    width: 102px;
+    height: 40px;
+    margin-right: 15px;
+    align-items: center;
+    text-align: center;
   }
 }
