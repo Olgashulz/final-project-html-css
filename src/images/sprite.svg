@@ -24,5 +24,26 @@
 <symbol id="icon-keyboard-right" viewBox="0 0 32 32">
 <path d="M6.133 28l12.267-12-12.267-12.267 3.733-3.733 16 16-16 16z"></path>
 </symbol>
+<symbol id="icon-cake" viewBox="0 0 32 32">
+<path d="M25.5 9c-0.295 0-0.58 0.037-0.857 0.097-0.123-1.821-1.624-3.264-3.476-3.264-0.415 0-0.808 0.085-1.177 0.218-1.15-1.828-3.172-3.051-5.49-3.051-3.522 0-6.373 2.807-6.48 6.303-0.469-0.193-0.981-0.303-1.52-0.303-2.209 0-4 1.791-4 4 0 2.152 1.703 3.894 3.833 3.982l1.604-1.604 1.622 1.622h0.758l1.621-1.622 1.621 1.622h0.758l1.621-1.622 1.621 1.622h0.758l1.621-1.622 1.621 1.622h0.758l1.621-1.622 1.616 1.616c2.183-0.029 3.946-1.803 3.946-3.994 0-2.209-1.791-4-4-4zM24 16.566l-1.434 1.434h-1.258l-1.371-1.371-1.371 1.371h-1.258l-1.371-1.371-1.371 1.371h-1.258l-1.371-1.371-1.371 1.371h-1.257l-1.371-1.371-1.372 1.371h-0.066l2.65 11h13.625l2.725-11h-0.066l-1.434-1.434zM11.5 28l-2.083-9h1l2.083 9h-1zM13.5 28l-1.062-9h1l1.062 9h-1zM16.5 28h-1v-9h1v9zM17.5 28l1.062-9h1l-1.062 9h-1zM20.5 28h-1l2.062-9h1l-2.062 9z"></path>
+</symbol>
+<symbol id="icon-icecream" viewBox="0 0 32 32">
+<path d="M20.804 10.742c1.448-3.62-1.789-4.217-1.789-4.174 1.022-2.556-1.022-4.26-2.896-4.26s-1.789 0.853-1.789 0.853 1.022-0.213 1.022 0.596c0 0.81-0.938 0.767-1.874 1.704-0.938 0.937-0.49 0.81-0.554 0.81 1.948-0.128 3.088 1.885 5.239 1.149-2.13 1.065-2.641-0.628-4.941-0.713-0.298 0-2.002-0.33-2.002 2.928 2.492 0.288 3.578 2.002 6.943 1.619-3.791 1.405-8.54-4.409-9.2 1.959 0 1.363 1.021 2.048 1.021 2.048s11.799 0 11.757 0c2.342-1.022 1.193-4.732-0.937-4.519zM16.072 31l5.328-15.069h-10.773l5.445 15.069z"></path>
+</symbol>
+<symbol id="icon-icecream1" viewBox="0 0 24 24">
+<path d="M6.844 12.984q-1.172-0.094-2.016-0.961t-0.844-2.039q0-1.078 0.727-1.922t1.805-1.031q0.188-2.109 1.758-3.563t3.727-1.453 3.727 1.453 1.758 3.563q1.078 0.188 1.805 1.031t0.727 1.922q0 1.172-0.82 2.039t-1.992 0.961l-5.156 10.031zM8.813 12.422l3.234 6.188 3.188-6.188q-0.047-0.047-0.164-0.141t-0.164-0.141q-1.359 0.844-2.906 0.844t-2.906-0.844q-0.047 0.047-0.094 0.117t-0.094 0.117-0.094 0.047z"></path>
+</symbol>
+<symbol id="icon-Burger" viewBox="0 0 46 32">
+<path  stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+<path  stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+<path  stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-Vector" viewBox="0 0 19 32">
+<path  style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path   style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path   style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+</symbol>
 </defs>
 </svg>
