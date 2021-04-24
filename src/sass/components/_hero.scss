@@ -130,7 +130,7 @@
   align-items: center;
 }
 
-// @include for-phone-only {
+// @include for-phone-only
 @media screen and (max-width: 767px) {
   .hero__container {
     height: 502px;
@@ -292,17 +292,12 @@
     @include font-DM-Sans($fs: 14, $lh: 18);
     width: 138px;
     height: 40px;
-    align-items: center;
-    text-align: center;
   }
 
   .hero__button-pink {
     @include font-DM-Sans($fs: 14, $lh: 18);
     width: 102px;
     height: 40px;
-    margin-right: 15px;
-    align-items: center;
-    text-align: center;
     margin-right: 15px;
   }
 }
