@@ -1,3 +1,21 @@
+header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
 .header_container {
   @include flex-center();
   justify-content: space-between;
@@ -5,7 +23,6 @@
   position: absolute;
   width: 100%;
 
-  background-color: pink;
   padding-top: 6px;
   padding-bottom: 6px;
 }
