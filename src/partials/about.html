@@ -47,10 +47,12 @@
         <p class="about__text-taste">
           Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
           in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-          maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          maximus. Cras massa nibh, tincidunt.
         </p>
 
-        <button type="button" class="button-light">
+        <p class="about__text-set">Aliquam erat volutpat. Aenean accumsan.</p>
+
+        <button type="button" class="about__button button-light">
           Read more
           <svg class="button__icon-keyboard-right" width="15" height="15">
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
@@ -58,10 +60,9 @@
         </button>
       </div>
     </div>
+
     <ul class="about__set list">
       <li class="about__item">
-        <img src="./images/about/icon1.png" alt="" />
-
         <p class="about__text">
           <span class="about__number"> 721</span> Aliquam ac dui vel dui vulputate consectetur.
           Mauris massa.
@@ -90,19 +91,42 @@
 </section>
 
 <!--  секция GALLERY -->
-<section>
+<section class="about_gellery">
   <h2 class="visually-hidden">Галерея</h2>
   <div class="container">
-    <picture class="about_picture">
-      <source srcset="" type="image/webp" media="(min-width: 1280px)" />
-      <source srcset="" media="(min-width: 1280px)" />
+    <div class="gallery">
+      <picture class="about_photo">
+        <source
+          srcset="./images/about/gallery-desc-wp.webp 1x, ./images/about/gallery-desc-wp@2x.webp 2x"
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/about/gallery-desc.png 1x, ./images/about/gallery-desc@2x.png 2x"
+          media="(min-width: 1280px)"
+        />
 
-      <source srcset="" type="image/webp" media="(min-width: 768px)" />
-      <source srcset="" media="(min-width: 768px)" />
+        <source
+          srcset="./images/about/gallery-tab-wp.webp 1x, ./images/about/gallery-tab-wp@2x.webp 2x"
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/gallery-tab.png 1x, ./images/about/gallery-tab@2x.png 2x"
+          media="(min-width: 768px)"
+        />
 
-      <source srcset="" type="image/webp" media="(min-width: 480px)" />
-      <source srcset="" media="(min-width: 480px)" />
-      <img src="" alt="" />
-    </picture>
+        <source
+          srcset="./images/about/gallery-mob-wp.webp 1x, ./images/about/gallery-mob-wp@2x.webp 2x"
+          type="image/webp"
+          media="(min-width: 480px)"
+        />
+        <source
+          srcset="./images/about/gallery-mob.png 1x, ./images/about/gallery-mob@2x.png 2x"
+          media="(min-width: 480px)"
+        />
+        <img src="./images/about/gallery-tab.png" alt="фото галерея" />
+      </picture>
+    </div>
   </div>
 </section>
