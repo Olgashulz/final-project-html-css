@@ -1,9 +1,16 @@
+// ==============секция AboutUS=======================//
+
 .about {
   background-color: rgba(255, 245, 246, 1);
   padding-top: 113px;
+  padding-bottom: 39px;
 
   @include for-tablet-portrait-up {
     padding-top: 125px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    padding-bottom: 66px;
   }
 }
 
@@ -27,20 +34,6 @@
   @include font-DM-Sans(14, 27);
   color: var(--text-color);
   padding-bottom: 10px;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/about/bg-mob.png);
-
-    @media screen and (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/bg-mob@2x.png);
-    }
-  }
 }
 
 .about__text-set {
@@ -57,66 +50,34 @@
   }
 }
 
-.about__set {
-  padding-top: 39px;
-
-  @include for-tablet-portrait-up {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 66px;
-  }
-}
-
-.about__number {
-  display: block;
-  @include font-Titan-One(36, 41);
-  color: var(--title-color);
-
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  padding-bottom: 13px;
-  padding-top: 16px;
-
-  @include for-tablet-portrait-up {
-    @include font-Titan-One(48, 55);
-    text-transform: none;
-    padding-top: 36px;
-  }
-
-  @include for-desktop-up {
-    @include font-Titan-One(58, 66);
-
-    padding-top: 36px;
-  }
-}
-
-.about__item {
-  &:not(:last-child) {
-    padding-bottom: 38px;
-  }
-}
-
-.about__text {
-  @include font-DM-Sans(12, 20, 700);
-  max-width: 230px;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    max-width: 170px;
-  }
-}
-
 .about__box {
   @include for-tablet-portrait-up {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
   }
+}
+
+.about {
+  @media screen and (max-width: 767px) {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+
+    background-image: url(../images/about/bg-mob.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/bg-mob@2x.png);
+    }
+  }
 
   @include for-desktop-up {
-    background-size: cover;
-    // background-position: center;
+    background-size: unset;
     background-repeat: no-repeat;
+    background-position: bottom;
 
     background-image: url(../images/about/bg-desc.png);
 
@@ -151,15 +112,99 @@
 
 .about__button {
   margin: 0;
+  width: 176px;
+  height: 40px;
+  opacity: 0.7;
 }
 
-// ========ГАЛЕРЕЯ=========//
+//=========================Секция ADVANTAGE=========================//
+.advantage {
+  background-color: rgba(255, 245, 246, 1);
+  padding-bottom: 97px;
+  @include for-tablet-portrait-up {
+    padding-bottom: 140px;
+  }
+}
 
-.about_gellery {
-  padding-top: 97px;
-  margin: 0 auto;
+.advantage__set {
+  @include for-tablet-portrait-up {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantage__number {
+  display: block;
+  @include font-Titan-One(36, 41);
+  color: var(--title-color);
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  padding-bottom: 13px;
+  padding-top: 56px;
 
   @include for-tablet-portrait-up {
-    padding-top: 140px;
+    @include font-Titan-One(48, 55);
+    text-transform: none;
+    padding-top: 76px;
   }
+
+  @include for-desktop-up {
+    @include font-Titan-One(58, 66);
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .advantage__item:not(:last-child) {
+    padding-bottom: 38px;
+  }
+}
+.advantage__item {
+  position: relative;
+
+  &:first-child:before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/about/icon1.png);
+
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(2):before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/about/icon2.png);
+
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(3):before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/about/icon3.png);
+
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantage__text {
+  @include font-DM-Sans(12, 20, 700);
+  max-width: 230px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 170px;
+  }
+}
+
+// =============================ГАЛЕРЕЯ==============================//
+
+.about__gellery {
+  margin: 0 auto;
+
+  background: linear-gradient(360deg, #ffffff, #fff5f6);
 }

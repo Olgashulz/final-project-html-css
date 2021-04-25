@@ -1,6 +1,6 @@
 <!-- Секция ABOUT -->
 
-<section class="about">
+<section id="about" class="about">
   <div class="container">
     <p class="about__subtitle subtitle">tradition and love</p>
     <h1 class="about__title title">how it’s made?</h1>
@@ -54,36 +54,36 @@
 
         <button type="button" class="about__button button-light">
           Read more
-          <svg class="button__icon-keyboard-right" width="15" height="15">
+          <svg class="button__icon-keyboard-right" width="12" height="12">
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
           </svg>
         </button>
       </div>
     </div>
+  </div>
+</section>
 
-    <ul class="about__set list">
-      <li class="about__item">
-        <p class="about__text">
-          <img src="./images/about/icon1.png" alt="" />
-          <span class="about__number"> 721</span> Aliquam ac dui vel dui vulputate consectetur.
+<section class="advantage">
+  <h2 class="visually-hidden">Наши преимущества</h2>
+  <div class="container">
+    <ul class="advantage__set list">
+      <li class="advantage__item">
+        <p class="advantage__text">
+          <span class="advantage__number"> 721</span> Aliquam ac dui vel dui vulputate consectetur.
           Mauris massa.
         </p>
       </li>
 
-      <li class="about__item">
-        <img src="./images/about/icon2.png" alt="" />
-
-        <p class="about__text">
-          <span class="about__number"> 16kg</span> Aliquam ac dui vel dui vulputate consectetur.
+      <li class="advantage__item">
+        <p class="advantage__text">
+          <span class="advantage__number"> 16kg</span> Aliquam ac dui vel dui vulputate consectetur.
           Mauris massa.
         </p>
       </li>
 
-      <li class="about__item">
-        <img src="./images/about/icon3.png" alt="" />
-
-        <p class="about__text">
-          <span class="about__number"> 84</span> Aliquam ac dui vel dui vulputate consectetur.
+      <li class="advantage__item">
+        <p class="advantage__text">
+          <span class="advantage__number"> 84</span> Aliquam ac dui vel dui vulputate consectetur.
           Mauris massa.
         </p>
       </li>
@@ -92,18 +92,18 @@
 </section>
 
 <!--  секция GALLERY -->
-<section class="about_gellery">
+<section class="about__gellery">
   <h2 class="visually-hidden">Галерея</h2>
   <div class="container">
     <div class="gallery">
-      <picture class="about_photo">
+      <picture class="gallery__photo">
         <source
           srcset="./images/about/gallery-desc-wp.webp 1x, ./images/about/gallery-desc-wp@2x.webp 2x"
           type="image/webp"
           media="(min-width: 1280px)"
         />
         <source
-          srcset="./images/about/gallery-desc.png 1x, ./images/about/gallery-desc@2x.png 2x"
+          srcset="./images/about/gallery-desc.jpg 1x, ./images/about/gallery-desc@2x.jpg 2x"
           media="(min-width: 1280px)"
         />
 
@@ -113,7 +113,7 @@
           media="(min-width: 768px)"
         />
         <source
-          srcset="./images/about/gallery-tab.png 1x, ./images/about/gallery-tab@2x.png 2x"
+          srcset="./images/about/gallery-tab.jpg 1x, ./images/about/gallery-tab@2x.jpg 2x"
           media="(min-width: 768px)"
         />
 
@@ -123,10 +123,10 @@
           media="(min-width: 480px)"
         />
         <source
-          srcset="./images/about/gallery-mob.png 1x, ./images/about/gallery-mob@2x.png 2x"
+          srcset="./images/about/gallery-mob.jpg 1x, ./images/about/gallery-mob@2x.jpg 2x"
           media="(min-width: 480px)"
         />
-        <img src="./images/about/gallery-tab.png" alt="фото галерея" />
+        <img src="./images/about/gallery-tab.jpg" alt="фото галерея" />
       </picture>
     </div>
   </div>
