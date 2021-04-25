@@ -1,4 +1,11 @@
 .products {
+  padding-top: 121px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+  }
   .subtitle {
     display: block;
     align-items: center;
