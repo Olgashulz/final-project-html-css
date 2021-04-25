@@ -1,6 +1,207 @@
 .hero {
   background-color: var(--bg-pink);
+  animation-name: changeBgColor;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+
+  @keyframes changeBgColor {
+    0% {
+      background-image: linear-gradient(to right, #ffb8ca 0%, #ffb8ca 100%);
+    }
+    8% {
+      background-image: linear-gradient(to right, red 0%, red 14.28%, #ffb8ca 14.29%, #ffb8ca 100%);
+    }
+
+    16% {
+      background-image: linear-gradient(
+        to right,
+        red 0%,
+        red 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        #ffb8ca 28.57%,
+        #ffb8ca 100%
+      );
+    }
+
+    24% {
+      background-image: linear-gradient(
+        to right,
+        red 0%,
+        red 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        #ffb8ca 42.85%,
+        #ffb8ca 100%
+      );
+    }
+
+    32% {
+      background-image: linear-gradient(
+        to right,
+        red 0%,
+        red 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        green 42.85%,
+        green 57.14%,
+        #ffb8ca 57.14%,
+        #ffb8ca 100%
+      );
+    }
+    40% {
+      background-image: linear-gradient(
+        to right,
+        red 0%,
+        red 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        green 42.85%,
+        green 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        #ffb8ca 71.43%,
+        #ffb8ca 100%
+      );
+    }
+    48% {
+      background-image: linear-gradient(
+        to right,
+        red 0%,
+        red 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        green 42.85%,
+        green 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+    56% {
+      background-image: linear-gradient(
+        to right,
+        #ffb8ca 0%,
+        #ffb8ca 14.28%,
+        orange 14.28%,
+        orange 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        green 42.85%,
+        green 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+
+    64% {
+      background-image: linear-gradient(
+        to right,
+        #ffb8ca 0%,
+        #ffb8ca 28.57%,
+        yellow 28.57%,
+        yellow 42.85%,
+        green 42.85%,
+        green 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+
+    72% {
+      background-image: linear-gradient(
+        to right,
+        #ffb8ca 0%,
+        #ffb8ca 42.85%,
+        green 42.85%,
+        green 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+
+    80% {
+      background-image: linear-gradient(
+        to right,
+        #ffb8ca 0%,
+        #ffb8ca 57.14%,
+        blue 57.14%,
+        blue 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+    88% {
+      background-image: linear-gradient(
+        to right,
+        #ffb8ca 0%,
+        #ffb8ca 71.43%,
+        indigo 71.43%,
+        indigo 85.72%,
+        #ffb8ca 85.72%,
+        #ffb8ca 100%
+      );
+    }
+    100% {
+      background-image: linear-gradient(to right, #ffb8ca 0%, #ffb8ca 100%);
+    }
+  }
 }
+
+//   // float: left;
+//   // width: 70px;
+//   // height: 70px;
+//   animation-name: example;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite;
+// }
+// @keyframes example {
+
+// /* Chrome, Safari, Opera */
+// @-webkit-keyframes example {
+//   0% {
+//     background-color: red;
+//   }
+//   25% {
+//     background-color: yellow;
+//   }
+//   50% {
+//     background-color: blue;
+//   }
+//   75% {
+//     background-color: green;
+//   }
+//   100% {
+//     background-color: red;
+//   }
+
 .hero__container {
   position: relative;
   padding-top: 191px;
@@ -129,6 +330,10 @@
   height: 24px;
   align-items: center;
 }
+
+// .hero__link {
+//   r
+// }
 
 // @include for-phone-only
 @media screen and (max-width: 767px) {
