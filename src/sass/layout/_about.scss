@@ -1,18 +1,69 @@
+.about {
+  background-color: rgba(255, 245, 246, 1);
+  padding-top: 113px;
+
+  @include for-tablet-portrait-up {
+    padding-top: 125px;
+  }
+}
+
+.about__title {
+  @include for-tablet-portrait-up {
+    padding-bottom: 100px;
+  }
+}
+
 .about__text-structure {
   @include font-DM-Sans(16, 28);
 
   margin-bottom: 30px;
+
+  @media screen and (max-width: 479px) {
+    padding-top: 46px;
+  }
 }
 
 .about__text-taste {
   @include font-DM-Sans(14, 27);
   color: var(--text-color);
+  padding-bottom: 10px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/bg-mob.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/bg-mob@2x.png);
+    }
+  }
+}
+
+.about__text-set {
+  @include font-DM-Sans(14, 27);
+  color: var(--text-color);
+  padding-bottom: 24px;
+
+  @include for-tablet-portrait-up {
+    padding-bottom: 63px;
+  }
+
+  @include for-desktop-up {
+    padding-bottom: 45px;
+  }
 }
 
 .about__set {
+  padding-top: 39px;
+
   @include for-tablet-portrait-up {
     display: flex;
     justify-content: space-between;
+    padding-top: 66px;
   }
 }
 
@@ -25,15 +76,24 @@
   text-transform: uppercase;
 
   padding-bottom: 13px;
+  padding-top: 16px;
 
   @include for-tablet-portrait-up {
     @include font-Titan-One(48, 55);
     text-transform: none;
+    padding-top: 36px;
   }
 
   @include for-desktop-up {
     @include font-Titan-One(58, 66);
-    padding-bottom: 15px;
+
+    padding-top: 36px;
+  }
+}
+
+.about__item {
+  &:not(:last-child) {
+    padding-bottom: 38px;
   }
 }
 
@@ -43,5 +103,63 @@
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 170px;
+  }
+}
+
+.about__box {
+  @include for-tablet-portrait-up {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  @include for-desktop-up {
+    background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/about/bg-desc.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/bg-desc@2x.png);
+    }
+  }
+}
+
+.about__content {
+  @include for-tablet-portrait-up {
+    max-width: 340px;
+  }
+
+  @include for-desktop-up {
+    max-width: 440px;
+  }
+}
+
+.about__picture {
+  @media screen and (max-width: 479px) {
+    margin: 0 auto;
+  }
+
+  @include for-tablet-portrait-up {
+    margin-top: -40px;
+  }
+}
+
+.about__button {
+  margin: 0;
+}
+
+// ========ГАЛЕРЕЯ=========//
+
+.about_gellery {
+  padding-top: 97px;
+  margin: 0 auto;
+
+  @include for-tablet-portrait-up {
+    padding-top: 140px;
   }
 }
