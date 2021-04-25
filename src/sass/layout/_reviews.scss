@@ -2,7 +2,7 @@
   padding-top: 80px;
   padding-bottom: 86px;
 }
-.slaider-wraper__img {
+.slaider__img {
   margin: 0 auto;
   margin-bottom: 29px;
 }
@@ -11,10 +11,39 @@
   padding: 43px 66px 26px 57px;
   background-color: var(--bg-reviews);
   margin-bottom: 52px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 57px;
+    display: block;
+    background-image: url('../images/reviews/commas.svg');
+    width: 54px;
+    height: 40px;
+    z-index: 1;
+    background-repeat: no repeat;
+    background-size: contain;
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    position: absolute;
+    background-image: url('../images/reviews/dots.png');
+    transform: translateY(60px);
+  }
 }
+
 .slaider-wraper__text {
   @include font-DM-Sans(12, 31, 500);
   text-align: center;
+  z-index: 2;
   color: var(--dark-text-color);
   background-image: repeating-linear-gradient(
     rgba(100%, 100%, 100%, 0%) 0px,
@@ -27,25 +56,28 @@
   text-align: center;
   @include font-DM-Sans(14, 26, 500);
 }
-.slaider-wraper {
-  position: relative;
-}
-.slaider-wraper__block::before {
-  content: '';
 
-  display: block;
-  background-image: url('../images/reviews/quotes.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 54px;
-  height: 40px;
+.slick-dots {
+  list-style: none;
+  @include flex-center;
+  width: 72px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.slick-dots li button {
+  background-color: pink;
+  border-radius: 50%;
+  border: transparent;
+}
+.slick-dots li button::not(:last-child) {
+  margin-right: 18px;
 }
 @media screen and (min-width: 768px) {
   .container__reviews {
     padding-top: 121px;
     padding-bottom: 119px;
   }
-  .slaider-wraper__img {
+  .slaider__img {
     margin-bottom: 19px;
   }
   .slaider-wraper__block {
@@ -59,13 +91,17 @@
   .slaider-wraper__title {
     @include font-DM-Sans(16, 26, 500);
   }
+  .slaider-wraper__block::before {
+    top: 30px;
+    left: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container__reviews {
     padding-top: 123px;
     padding-bottom: 132px;
   }
-  .slaider-wraper__img {
+  .slaider__img {
     margin-bottom: 15px;
   }
   .slaider-wraper__block {
@@ -75,5 +111,9 @@
   .slaider-wraper__text {
     letter-spacing: 0.04em;
     @include font-DM-Sans(16, 30, 500);
+  }
+  .slaider-wraper__block::before {
+    top: 30px;
+    left: 50px;
   }
 }
