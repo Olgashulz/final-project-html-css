@@ -1,19 +1,24 @@
 /////////// Миксин для media
 
 @mixin for-phone-only {
-  @media (min-width: 480px) { @content; }
+  @media (min-width: 480px) {
+    @content;
+  }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: 768px) { @content; }
+  @media (min-width: 768px) {
+    @content;
+  }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1280px) { @content; }
+  @media (min-width: 1200px) {
+    @content;
+  }
 }
-
 
 ///////////// Миксин для шрифта 'DM Sans'
 // Первым передаем значение font-size,
-// далее line-height, 
+// далее line-height,
 // font-weight по умолчанию 500
 // font-family по умолчанию - 'DM Sans', sans-serif
 
@@ -23,36 +28,34 @@
 // Если жирность отличаеться то 3 значения:
 // @include font-DM-Sans (42, 36, 700)
 
-@mixin font-DM-Sans ($fs, $lh, $fw:500, $ffamily:('DM Sans', sans-serif)){
-  font-size: $fs*1px;
+@mixin font-DM-Sans($fs, $lh, $fw: 500, $ffamily: ('DM Sans', sans-serif)) {
+  font-size: $fs * 1px;
   line-height: $lh/$fs;
-  font-weight: $fw;  
-  font-family: $ffamily;  
+  font-weight: $fw;
+  font-family: $ffamily;
 }
-
 
 ///////////// Миксин для шрифта 'Titan One'
 // Первым передаем значение font-size,
-// далее line-height, 
+// далее line-height,
 // font-weight по умолчанию 400
 // font-family по умолчанию - 'Titan One', cursive
 
 // Жирность у этого шрифта всегда одинаковая, по этому передаем только 2 значения:
 // @include font-Titan-One (42, 36)
 
-@mixin font-Titan-One ($fs, $lh, $fw:400, $ffamily:('Titan One', cursive)){
-  font-size: $fs*1px;
+@mixin font-Titan-One($fs, $lh, $fw: 400, $ffamily: ('Titan One', cursive)) {
+  font-size: $fs * 1px;
   line-height: $lh/$fs;
-  font-weight: $fw;  
-  font-family: $ffamily;  
+  font-weight: $fw;
+  font-family: $ffamily;
 }
-
 
 /////////// Миксин для центрирования flex єлементов
 // Подключается: @include flex-center();
 
-@mixin flex-center () {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,2 @@
+
+$(".slaider").slick()
