@@ -232,6 +232,21 @@
   position: absolute;
   bottom: 0;
   right: 4px;
+  animation: animate-girl 2000ms infinite 2000ms;
+}
+
+@keyframes animate-girl {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .hero__wrapper {
@@ -331,10 +346,10 @@
   align-items: center;
 }
 
-// .hero__link {
-//   r
-// }
-
+.hero__button-arrow-right {
+  width: 10px;
+  height: 10px;
+}
 // @include for-phone-only
 @media screen and (max-width: 767px) {
   .hero__container {
@@ -403,8 +418,8 @@
   }
 
   .hero__img--circle {
-    top: 31px;
-    left: 337px;
+    top: 34px;
+    left: 300px;
     min-width: 324px;
     height: 322px;
   }

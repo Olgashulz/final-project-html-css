@@ -2,14 +2,16 @@
   background-color: var(--bg-light-pink);
   &__container {
     padding-bottom: 46px;
+    padding-top: 56px;
 
     @media screen and (min-width: 768px) {
       padding-bottom: 91px;
-    }
-
-    @media screen and (min-width: 768px) {
+      padding-top: 79px;
       display: flex;
       justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 82px;
     }
   }
   &__wrapper {
@@ -97,12 +99,12 @@
 
   &__icon {
     fill: var(--subtitle-color);
-    //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &__link:hover &,
-    &__link:focus & {
-      fill: var(--accent-color);
-    }
+    transition: fill 250ms var(--cubic);
+  }
+  &__item:hover &__icon,
+  &__item:focus &__icon {
+    fill: var(--accent-color);
+    transition: fill 250ms var(--cubic);
   }
 }
 
@@ -111,7 +113,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   width: 152px;
-  
+
   @media screen and (min-width: 768px) {
     padding-top: 29px;
     padding-bottom: 18px;
