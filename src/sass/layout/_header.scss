@@ -33,11 +33,6 @@ header {
 .modal__btn {
   display: none;
 }
-
-.data-menu-button{
-z-index: 1;
-}
-
 .burger-btn {
   @include flex-center();
   background-color: transparent;
@@ -102,8 +97,9 @@ z-index: 1;
   
 }
 
-.mob-menu.is-open  .nav__tablet {
-  display: none;
+.mob-menu.is-open  .burger-btn
+.mob-menu.is-open  .modal__btn {
+  display: none
 }
 
 .mob-close-btn {
