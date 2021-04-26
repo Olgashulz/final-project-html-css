@@ -1,0 +1,104 @@
+.contacts {
+  background-color: #fff5f6;
+  background-image: url('../images/contacts/bgcont.png');
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -10px;
+  }
+  &__item {
+    flex-basis: calc(100% - 20px);
+    margin: 10px;
+    max-width: 220px;
+    height: auto;
+    padding: 40px 20px;
+    background-color: var(--white-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  &__button {
+    @include flex-center();
+    flex-wrap: wrap;
+    margin-top: 54px;
+  }
+}
+.timetable-card {
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item:nth-child(2)::after {
+    content: '';
+    width: 179px;
+    height: 0;
+    margin-top: 25px;
+    border: 1px solid #e1e1e1;
+  }
+  &__item:nth-child(3)::after {
+    content: '';
+    width: 179px;
+    height: 0;
+    margin-top: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.card {
+  &__name {
+    @include flex-center();
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    border-radius: 6px;
+    &--brown {
+      width: 80px;
+      height: 16px;
+      background-color: var(--bg-beige);
+    }
+    &--green {
+      width: 130px;
+      height: 16px;
+      background-color: var(--bg-light-green);
+    }
+    &--brown {
+      width: 80px;
+      height: 16px;
+      background-color: var(--bg-beige);
+    }
+  }
+  &__location {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(--dark-text-color);
+  }
+  &__description {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+  &__sked:nth-child(2) {
+    margin-top: 10px;
+  }
+  &__tel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+  &__mail {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+}
