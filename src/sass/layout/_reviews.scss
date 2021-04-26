@@ -82,6 +82,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   transform: background-image 1000ms linear;
+  border-radius: initial;
 }
 .slick-dots li button::not(:last-child) {
   margin-right: 18px;
