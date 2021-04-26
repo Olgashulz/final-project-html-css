@@ -92,13 +92,16 @@ header {
   }
 }
 
+.data-menu-button{
+  z-index:1;
+}
+
 .is-open {
   transform: translateY(0) translateX(-50%);
   
 }
 
-.mob-menu.is-open  .burger-btn
-.mob-menu.is-open  .modal__btn {
+.mob-menu.is-open  .nav__tablet {
   display: none
 }
 

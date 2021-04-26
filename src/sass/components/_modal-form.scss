@@ -6,13 +6,12 @@
     display: block;
     text-align: center;
     margin-bottom: 20px;
-    @include font-Titan-One (42, 36);
+    @include font-Titan-One (35, 40);
     color: var(--title-color);
   }
   &__field {
-    @include font-DM-Sans (24, 36);
-    letter-spacing: 0.03em;
-    color:var(--subtitle-color);
+    @include font-DM-Sans (19, 30);
+    color:var(--title-color);
   }
   &__input-wrapper {
     position: relative;
@@ -21,9 +20,17 @@
   }
   &__btn{
     margin-top: 20px;
+    padding: 10px;
     letter-spacing: 0.04em;
   }
 }
+
+.modal-form__btn:hover{
+  animation-name:animate_heartBeat;
+  animation-duration:500ms;
+  animation-iteration-count: 3;
+  }
+
 
 .modal-form__icon {
 position: absolute;
