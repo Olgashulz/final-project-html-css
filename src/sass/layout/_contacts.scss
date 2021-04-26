@@ -1,11 +1,22 @@
 .contacts {
+  padding-top: 86px;
   background-color: #fff5f6;
-  background-image: url('../images/contacts/bgcont.png');
+  // background-image: url('../images/contacts/bgcont.png');
+  // background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    padding-top: 119px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 132px;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: -10px;
+    @media screen and (min-width: 1200px) {
+      margin: -15px;
+    }
   }
   &__item {
     flex-basis: calc(100% - 20px);
@@ -16,11 +27,27 @@
     background-color: var(--white-text-color);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 20px);
+      padding: 50px 30px 50px 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+      max-width: 330px;
+      margin: 15px;
+      padding: 55px 40px;
+    }
   }
   &__button {
     @include flex-center();
     flex-wrap: wrap;
     margin-top: 54px;
+    @media screen and (min-width: 768px) {
+      margin-top: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 86px;
+    }
   }
 }
 .timetable-card {
@@ -34,6 +61,14 @@
     height: 0;
     margin-top: 25px;
     border: 1px solid #e1e1e1;
+    @media screen and (min-width: 768px) {
+      width: 157px;
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 234px;
+      margin-top: 32px;
+    }
   }
   &__item:nth-child(3)::after {
     content: '';
@@ -41,9 +76,23 @@
     height: 0;
     margin-top: 25px;
     border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: 768px) {
+      width: 157px;
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 234px;
+      margin-top: 32px;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
   }
 }
 .card {
@@ -56,15 +105,26 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     border-radius: 6px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
     &--brown {
       width: 80px;
       height: 16px;
       background-color: var(--bg-beige);
+      @media screen and (min-width: 768px) {
+        width: 73px;
+        height: 28px;
+      }
     }
     &--green {
       width: 130px;
       height: 16px;
       background-color: var(--bg-light-green);
+      @media screen and (min-width: 768px) {
+        width: 138px;
+        height: 28px;
+      }
     }
   }
   &__location {
@@ -73,6 +133,12 @@
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: var(--dark-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &__description {
     margin-top: 10px;
@@ -80,20 +146,94 @@
     font-size: 12px;
     line-height: 1.5;
     color: var(--text-color);
+    @media screen and (min-width: 768px) {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.83;
+    }
   }
   &__sked:nth-child(2) {
     margin-top: 10px;
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 15px;
+    }
   }
   &__tel {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
     color: var(--text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
   &__mail {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
     color: var(--text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+}
+.sked {
+  &__day {
+    @include font-DM-Sans(16, 30);
+    letter-spacing: 0.04em;
+    color: var(--dark-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  &__time {
+    @include font-DM-Sans(16, 30);
+    letter-spacing: 0.04em;
+    color: var(--subtitle-color);
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+  .button-light {
+    margin: 5px;
+    padding: 14px 32px;
+    @media screen and (min-width: 768px) {
+      margin: 7px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 8px;
+    }
+  }
+  .button-pink {
+    margin: 5px;
+    padding: 14px 17px;
+    @media screen and (min-width: 768px) {
+      margin: 7px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 8px;
+    }
   }
 }
