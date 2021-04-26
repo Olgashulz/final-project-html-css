@@ -97,9 +97,9 @@ header {
   
 }
 
-.mob-menu.is-open  .burger-btn
-.mob-menu.is-open  .modal__btn {
-  display: none
+.mob-menu.is-open .nav__tablet,
+.mob-menu.is-open .nav__tablet {
+  display: none;
 }
 
 .mob-close-btn {
