@@ -55,6 +55,7 @@
 .slaider-wraper__title {
   text-align: center;
   @include font-DM-Sans(14, 26, 500);
+  margin-bottom: 30px;
 }
 
 .slick-dots {
@@ -63,11 +64,24 @@
   width: 72px;
   justify-content: space-between;
   margin: 0 auto;
+  font-size: 0;
 }
 .slick-dots li button {
-  background-color: pink;
+  background-color: #d9d9d9;
   border-radius: 50%;
   border: transparent;
+  width: 12px;
+  height: 12px;
+}
+.slick-dots .slick-active button {
+  background-image: url('../images/reviews/home-button.svg');
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transform: background-image 1000ms linear;
 }
 .slick-dots li button::not(:last-child) {
   margin-right: 18px;
@@ -90,6 +104,7 @@
   }
   .slaider-wraper__title {
     @include font-DM-Sans(16, 26, 500);
+    margin-bottom: 35px;
   }
   .slaider-wraper__block::before {
     top: 30px;
