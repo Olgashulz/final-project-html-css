@@ -347,10 +347,10 @@
   align-items: center;
 }
 
-// .hero__link {
-//   r
-// }
-
+.hero__button-arrow-right{
+  width: 10px;
+  height: 10px;
+}
 // @include for-phone-only
 @media screen and (max-width: 767px) {
   .hero__container {
