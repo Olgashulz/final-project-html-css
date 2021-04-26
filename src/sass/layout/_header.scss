@@ -92,13 +92,16 @@ header {
   }
 }
 
+.data-menu-button{
+  z-index:1;
+}
+
 .is-open {
   transform: translateY(0) translateX(-50%);
   
 }
 
-.mob-menu.is-open  .burger-btn
-.mob-menu.is-open  .modal__btn {
+.mob-menu.is-open  .nav__tablet {
   display: none
 }
 
@@ -192,6 +195,8 @@ header {
     &:hover,
     &:focus {
       color: var(--title-color);
+    /*box-shadow: 0px 1px 1px rgba(210, 20, 67, 0.12), 0px 4px 4px rgba(210, 20, 67, 0.06);
+      border-radius: 50px;*/
     }
   }
   .menu__link--active {
