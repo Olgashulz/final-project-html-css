@@ -5,202 +5,108 @@
   animation-timing-function: linear;
   animation-iteration-count: 2;
   animation-direction: alternate;
-
   @keyframes changeBgColor {
     0% {
       background-image: linear-gradient(to right, #ffb8ca 0%, #ffb8ca 100%);
     }
     8% {
-      background-image: linear-gradient(to right, red 0%, red 14.28%, #ffb8ca 14.29%, #ffb8ca 100%);
+      background-image: linear-gradient(to right, #fffefd 0%, #ffb8ca 14.29%);
     }
-
     16% {
-      background-image: linear-gradient(
-        to right,
-        red 0%,
-        red 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        #ffb8ca 28.57%,
-        #ffb8ca 100%
-      );
+      background-image: linear-gradient(to right, #fffefd 0%, #ffec92 14.28%, #ffb8ca 28.57%);
     }
-
     24% {
       background-image: linear-gradient(
         to right,
-        red 0%,
-        red 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        #ffb8ca 42.85%,
-        #ffb8ca 100%
+        #fffefd 0%,
+        #ffec92 14.28%,
+        #ffa940 28.57%,
+        #ffb8ca 42.85%
       );
     }
-
     32% {
       background-image: linear-gradient(
         to right,
-        red 0%,
-        red 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        green 42.85%,
-        green 57.14%,
-        #ffb8ca 57.14%,
-        #ffb8ca 100%
+        #fffefd 0%,
+        #ffec92 14.28%,
+        #ffa940 28.57%,
+        #9ebe94 42.85%,
+        #ffb8ca 57.14%
       );
     }
     40% {
       background-image: linear-gradient(
         to right,
-        red 0%,
-        red 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        green 42.85%,
-        green 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        #ffb8ca 71.43%,
-        #ffb8ca 100%
+        #fffefd 0%,
+        #ffec92 14.28%,
+        #ffa940 28.57%,
+        #9ebe94 42.85%,
+        #efa242 57.14%,
+        #ffb8ca 71.43%
       );
     }
     48% {
       background-image: linear-gradient(
         to right,
-        red 0%,
-        red 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        green 42.85%,
-        green 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
+        #fffefd 0%,
+        #ffec92 14.28%,
+        #ffa940 28.57%,
+        #9ebe94 42.85%,
+        #efa242 57.14%,
+        #ff587c 71.43%,
+        #ffb8ca 85.72%
       );
     }
     56% {
       background-image: linear-gradient(
         to right,
         #ffb8ca 0%,
-        #ffb8ca 14.28%,
-        orange 14.28%,
-        orange 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        green 42.85%,
-        green 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
+        #ffec92 14.28%,
+        #ffa940 28.57%,
+        #9ebe94 42.85%,
+        #efa242 57.14%,
+        #ff587c 71.43%,
+        #ffb8ca 85.72%
       );
     }
-
     64% {
       background-image: linear-gradient(
         to right,
-        #ffb8ca 0%,
-        #ffb8ca 28.57%,
-        yellow 28.57%,
-        yellow 42.85%,
-        green 42.85%,
-        green 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
+        #ffb8ca 14.28%,
+        #ffa940 28.57%,
+        #9ebe94 42.85%,
+        #efa242 57.14%,
+        #ff587c 71.43%,
+        #ffb8ca 85.72%
       );
     }
-
     72% {
       background-image: linear-gradient(
         to right,
-        #ffb8ca 0%,
-        #ffb8ca 42.85%,
-        green 42.85%,
-        green 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
+        #ffb8ca 28.57%,
+        #9ebe94 42.85%,
+        #efa242 57.14%,
+        #ff587c 71.43%,
+        #ffb8ca 85.72%
       );
     }
-
     80% {
       background-image: linear-gradient(
         to right,
-        #ffb8ca 0%,
-        #ffb8ca 57.14%,
-        blue 57.14%,
-        blue 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
+        #ffb8ca 42.85%,
+        #efa242 57.14%,
+        #ff587c 71.43%,
+        #ffb8ca 85.72%
       );
     }
     88% {
-      background-image: linear-gradient(
-        to right,
-        #ffb8ca 0%,
-        #ffb8ca 71.43%,
-        indigo 71.43%,
-        indigo 85.72%,
-        #ffb8ca 85.72%,
-        #ffb8ca 100%
-      );
+      background-image: linear-gradient(to right, #ffb8ca 57.14%, #ff587c 71.43%, #ffb8ca 85.72%);
     }
     100% {
       background-image: linear-gradient(to right, #ffb8ca 0%, #ffb8ca 100%);
     }
   }
 }
-
-//   // float: left;
-//   // width: 70px;
-//   // height: 70px;
-//   animation-name: example;
-//   animation-duration: 4s;
-//   animation-iteration-count: infinite;
-// }
-// @keyframes example {
-
-// /* Chrome, Safari, Opera */
-// @-webkit-keyframes example {
-//   0% {
-//     background-color: red;
-//   }
-//   25% {
-//     background-color: yellow;
-//   }
-//   50% {
-//     background-color: blue;
-//   }
-//   75% {
-//     background-color: green;
-//   }
-//   100% {
-//     background-color: red;
-//   }
 
 .hero__container {
   position: relative;
