@@ -1,13 +1,16 @@
 .contacts {
   padding-top: 86px;
+  padding-bottom: 56px;
   background-color: #fff5f6;
   // background-image: url('../images/contacts/bgcont.png');
   // background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
     padding-top: 119px;
+    padding-bottom: 79px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 132px;
+    padding-bottom: 82px;
   }
   &__list {
     display: flex;
@@ -38,16 +41,53 @@
       padding: 55px 40px;
     }
   }
-  &__button {
-    @include flex-center();
+  &__buttons {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 54px;
+
     @media screen and (min-width: 768px) {
       margin-top: 80px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 86px;
     }
+  }
+  &__button {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 161px;
+    @include font-DM-Sans(16, 21, 700);
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      padding: 15px 35px;
+      margin: 0;
+    }
+  }
+  &__button:not(:last-child) {
+    @media screen and (max-width: 767px){
+    margin-bottom: 10px;
+    }
+     @media screen and (min-width: 768px) {
+       margin-right: 15px;
+     }
+  }
+  &__icon {
+    width: 11px;
+    height: 11px;
+    margin-left: 3px;
+    fill: var(--accent-color);
+  }
+
+  &__icon--light {
+    fill: #ffffff;
   }
 }
 .timetable-card {
