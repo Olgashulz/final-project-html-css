@@ -68,13 +68,15 @@ header {
   }
   &__icon {
     margin-left: 14px;
-    width: 6px;
-    height: 10px;
-    fill: transparent;
+    width: 10px;
+    height: 12px;
+    fill: var(--title-color);
   }
   &__link {
     @include font-DM-Sans(14, 18, bold);
     color: var(--white-text-color);
+
+    transition: color 250ms var(--cubic);
     &:hover,
     &:focus {
       color: var(--title-color);
@@ -92,6 +94,12 @@ header {
 
 .is-open {
   transform: translateY(0) translateX(-50%);
+  
+}
+
+.mob-menu.is-open  .burger-btn
+.mob-menu.is-open  .modal__btn {
+  display: none
 }
 
 .mob-close-btn {
@@ -102,23 +110,31 @@ header {
   background-color: transparent;
   padding: 0;
   border: none;
-  fill: var(--title-color);
+
+    &:hover .mob-close-btn__icon,
+    &:focus .mob-close-btn__icon {
+    fill: var(--title-color);
+    }
 
   &__icon {
     width: 14px;
     height: 14px;
+    fill: var(--white-text-color);
+    transition: fill 250ms var(--cubic);
+
   }
 }
 @media screen and (min-width: 768px) {
   .header_container {
     padding-top: 37px;
   }
-  .nav_tablet {
+  .nav__tablet {
     @include flex-center();
     z-index: 1;
   }
   .modal__btn {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     margin: 0 0 0 30px;
     padding: 10px 34px;
 
@@ -126,12 +142,17 @@ header {
   }
   .modal__icon {
     margin-left: 14px;
-    width: 6px;
-    height: 10px;
-    fill: transparent;
+    width: 10px;
+    height: 12px;
+    fill: var(--title-color);
   }
   .mob-menu__btn {
     width: 186px;
+  }
+  .mob-menu__icon{
+    width: 10px;
+    height: 12px;
+    fill: var(--title-color);
   }
 }
 
