@@ -4,14 +4,11 @@
 
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to bottom, #fff 170px, #fff5f6 170px);
-    // background-color: #fff5f6;
-    //
-    // background-repeat: no-repeat;
   }
   @media screen and (min-width: 768px) {
     padding-top: 119px;
     padding-bottom: 79px;
-    // background-image: linear-gradient(to bottom, #fff 197px, #fff5f6 197px);
+    background-image: linear-gradient(to bottom, #fff 197px, #fff5f6 197px);
   }
   @media screen and (min-width: 1200px) {
     padding-top: 132px;
