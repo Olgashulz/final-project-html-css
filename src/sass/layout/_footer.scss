@@ -97,13 +97,14 @@
 
   &__icon {
     fill: var(--subtitle-color);
-    //   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &__link:hover &,
-    &__link:focus & {
-      fill: var(--accent-color);
-    }
+    transition: fill 250ms var(--cubic);
   }
+    &__item:hover &__icon,
+    &__item:focus &__icon {
+      fill: var(--accent-color);
+      transition: fill 250ms var(--cubic);
+    }
+  
 }
 
 .copyright {
