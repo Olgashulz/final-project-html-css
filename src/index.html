@@ -58,9 +58,15 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/open-modal-from-mobile-menu.js"></script>
+    <script src="./js/skrollTop.js"></script>
+    <script src="./js/slaider.js"></script>
+    <script src="./js/scroll-navigation.js"></script>
+    <script src="./js/scroll-from-mobile-menu-close.js"></script>
+    <script src="./js/scroll-from-mobile-menu-close-backdrop.js"></script>
+    <script src="./js/scroll-from-mobile-menu-button.js"></script>
 
     <!-- скрипт для плавного скрола мобильного меню + закрытиє бекдропа -->
-    <script>
+    <!-- <script>
       $('a.scrollto').click(function () {
         var elementClick = $(this).attr('href');
         var destination = $(elementClick).offset().top;
@@ -70,16 +76,14 @@
           },
           800,
         );
-        // document.querySelector('[data-menu]').classList.toggle('is-open');
-        // return false;
         document.querySelector('[data-menu-backdrop]').classList.toggle('is-open-backdrop');
         return false;
       });
-    </script>
+    </script> -->
 
     <!-- скрипт для плавного скрола мобильного меню + закрытие меню -->
 
-    <script>
+    <!-- <script>
       $('a.scrollto').click(function () {
         var elementClick = $(this).attr('href');
         var destination = $(elementClick).offset().top;
@@ -91,13 +95,12 @@
         );
         document.querySelector('[data-menu]').classList.toggle('is-open');
         return false;
-        // document.querySelector('[data-menu-backdrop]').classList.toggle('is-open-backdrop');
-        // return false;
       });
-    </script>
+    </script> -->
+
     <!-- скрипт для плавного скрола мобильного меню + вернуть кнопки меню -->
 
-    <script>
+    <!-- <script>
       $('a.scrollto').click(function () {
         var elementClick = $(this).attr('href');
         var destination = $(elementClick).offset().top;
@@ -110,10 +113,10 @@
         document.querySelector('[data-menu-daskt-nav]').classList.toggle('is-open-nav');
         return false;
       });
-    </script>
+    </script> -->
 
     <!-- скрипт для плавного скрола только для блока navigation -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(document).ready(function () {
         $('#menu, #hero__buttons').on('click', 'a', function (event) {
           event.preventDefault();
@@ -122,10 +125,10 @@
           $('body,html').animate({ scrollTop: top }, 800);
         });
       });
-    </script>
+    </script> -->
 
     <!-- Скрипт для слайдера -->
-    <script>
+    <!-- <script>
       $(function () {
         $('.slaider').slick({
           arrows: false,
@@ -135,11 +138,11 @@
           autoplaySpeed: 0,
         });
       });
-    </script>
+    </script> -->
 
     <!-- скрипт для кнопки вверх -->
 
-<script type="text/javascript"> 
+<!-- <script type="text/javascript"> 
 $(function() { 
 $(window).scroll(function() { 
 if($(this).scrollTop() != 0) { 
@@ -150,6 +153,6 @@ $('#toTop').fadeOut();
 $('#toTop').click(function() { 
 $('body,html').animate({scrollTop:0},800); 
 }); }); 
-</script>
+</script> -->
   </body>
 </html>
