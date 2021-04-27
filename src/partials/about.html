@@ -52,8 +52,12 @@
 
         <p class="about__text-set">Aliquam erat volutpat. Aenean accumsan.</p>
 
-        <button type="button" class="about__button button-light">
-          <a href="#about__open-modal" class="link">Read more</a>
+        <button
+          type="button"
+          class="about__button button-light"
+          onclick="window.location.href = '#about__open-modal';"
+        >
+          Read more
           <svg class="about__icon" width="12" height="12">
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
           </svg>
@@ -61,13 +65,12 @@
 
         <div id="about__open-modal" class="modal-dialog">
           <div class="about__modal">
-            <button type="button" class="about__close-button">
-              <a href="#close">
-                <svg class="about__close-icon">
-                  <use href="./images/sprite.svg#icon-Vector"></use>
-                </svg>
-              </a>
-            </button>
+            <a href="#close">
+              <svg class="about__close-icon">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+              </svg>
+            </a>
+
             <h2 class="about__modal-title title">lorem</h2>
             <p class="about__modal-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum fugiat, eum
