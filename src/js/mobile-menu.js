@@ -14,7 +14,7 @@
   });
 
 
-    menuBtnRef.addEventListener("click", () => {
+  menuBtnRef.addEventListener("click", () => {
     mobileBackdrop.classList.toggle("is-open-backdrop");
   })
 
@@ -22,7 +22,7 @@
     mobileBackdrop.classList.toggle("is-open-backdrop");
   });
 
-   menuBtnRef.addEventListener("click", () => {
+  menuBtnRef.addEventListener("click", () => {
     dasktopNavigation.classList.toggle("is-open-nav");
   })
 
