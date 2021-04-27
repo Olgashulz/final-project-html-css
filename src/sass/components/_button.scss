@@ -79,8 +79,8 @@
   padding-left: 11px;
   @include font-Titan-One(25, 36);
 
-  background-color: hsla(345, 83%, 45%, 0.9);
-  color: white;
+  background-color: #ffffff;
+  color: var(--accent-color);
   border-radius: 50%;
   border-color: transparent;
 
