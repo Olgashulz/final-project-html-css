@@ -1,10 +1,14 @@
-.products {
+.products__container {
   padding-top: 121px;
+  padding-bottom: 98px;
+
   @media screen and (min-width: 768px) {
     padding-top: 122px;
+    padding-bottom: 112px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 127px;
+    padding-bottom: 119px;
   }
   .subtitle {
     display: block;
@@ -14,7 +18,7 @@
   .title {
     margin-bottom: 114px;
     @media screen and (min-width: 1200px) {
-      margin-bottom: 259px;
+      margin-bottom: 200px;
     }
   }
   .button-arrow-right {
@@ -29,21 +33,31 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: nowrap;
-    margin: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
   }
   @media screen and (min-width: 1200px) {
-    margin: -30px;
+    margin-right: -12px;
+    margin-left: -12px;
+    margin-bottom: -12px;
   }
 }
 
 .products-card__item {
   padding-top: 30px;
+
   @media screen and (min-width: 768px) {
     margin: 10px;
-    flex-basis: calc((100% - 3 * 20px) / 3);
+    flex-basis: calc((100% - 3 * 10px) / 3);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+    flex-basis: calc((100% - 3 * 12px) / 3);
+  }
+}
+
+.products-card__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 120px;
   }
 }
 
@@ -76,7 +90,7 @@
   border-radius: 24px;
   width: 280px;
   height: 485px;
-  margin-bottom: 130px;
+
   .products__title {
     position: relative;
     &::before {
@@ -137,7 +151,7 @@
   border-radius: 24px;
   width: 280px;
   height: 485px;
-  margin-bottom: 130px;
+
   .products__title {
     position: relative;
     &::before {

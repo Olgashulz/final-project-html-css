@@ -10,8 +10,9 @@
       display: flex;
       justify-content: space-between;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       padding-top: 82px;
+      padding-bottom: 97px;
     }
   }
   &__wrapper {
@@ -25,8 +26,6 @@
 
     @media screen and (min-width: 768px) {
       width: 50%;
-    }
-    @media screen and (min-width: 1200px) {
     }
   }
 
@@ -50,6 +49,7 @@
 
     @media screen and (min-width: 768px) {
       @include font-Titan-One(48, 55);
+      margin-bottom: 0;
     }
     @media screen and (min-width: 1200px) {
       @include font-Titan-One(58, 66);
