@@ -1,23 +1,27 @@
 .contacts {
-  padding-top: 86px;
-  padding-bottom: 56px;
-
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(to bottom, #fff 170px, #fff5f6 170px);
   }
   @media screen and (min-width: 768px) {
-    padding-top: 119px;
-    padding-bottom: 79px;
     background-image: linear-gradient(to bottom, #fff 197px, #fff5f6 197px);
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 132px;
-    padding-bottom: 82px;
     background-image: url('../images/contacts/bgcont1200.png'),
       linear-gradient(to bottom, #fff 234px, #fff5f6 234px);
     background-repeat: no-repeat;
     background-position: center 234px, center;
   }
+  
+  &__container {
+    padding-bottom: 56px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 79px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 82px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

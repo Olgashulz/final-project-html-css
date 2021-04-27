@@ -1,0 +1,20 @@
+.backdrop-mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -100;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(235, 203, 221, 0.644);
+  transition: z-index 500ms var(--cubic),
+  opacity 500ms var(--cubic);
+}
+
+.backdrop-mob-menu.is-open-backdrop {
+  z-index: 5;
+  opacity: 1;
+  transition: z-index 100ms var(--cubic),
+  opacity 100ms var(--cubic);
+}
