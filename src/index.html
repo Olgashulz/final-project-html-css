@@ -58,7 +58,26 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
-    <!-- скрипт для плавного скрола мобильного меню -->
+    <!-- скрипт для плавного скрола мобильного меню + закрытиє бекдропа -->
+    <script>
+      $('a.scrollto').click(function () {
+        var elementClick = $(this).attr('href');
+        var destination = $(elementClick).offset().top;
+        jQuery('html:not(:animated),body:not(:animated)').animate(
+          {
+            scrollTop: destination,
+          },
+          800,
+        );
+        // document.querySelector('[data-menu]').classList.toggle('is-open');
+        // return false;
+        document.querySelector('[data-menu-backdrop]').classList.toggle('is-open-backdrop');
+        return false;
+      });
+    </script>
+
+    <!-- скрипт для плавного скрола мобильного меню + закрытие меню -->
+
     <script>
       $('a.scrollto').click(function () {
         var elementClick = $(this).attr('href');
@@ -70,6 +89,24 @@
           800,
         );
         document.querySelector('[data-menu]').classList.toggle('is-open');
+        return false;
+        // document.querySelector('[data-menu-backdrop]').classList.toggle('is-open-backdrop');
+        // return false;
+      });
+    </script>
+    <!-- скрипт для плавного скрола мобильного меню + вернуть кнопки меню -->
+
+    <script>
+      $('a.scrollto').click(function () {
+        var elementClick = $(this).attr('href');
+        var destination = $(elementClick).offset().top;
+        jQuery('html:not(:animated),body:not(:animated)').animate(
+          {
+            scrollTop: destination,
+          },
+          800,
+        );
+        document.querySelector('[data-menu-daskt-nav]').classList.toggle('is-open-nav');
         return false;
       });
     </script>
