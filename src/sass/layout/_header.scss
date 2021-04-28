@@ -90,6 +90,7 @@ header {
     &:hover,
     &:focus {
       color: var(--title-color);
+      transition: color 250ms var(--cubic);
     }
   }
   &__item {
@@ -126,6 +127,7 @@ header {
   &:hover .mob-close-btn__icon,
   &:focus .mob-close-btn__icon {
     fill: var(--title-color);
+    transition: fill 250ms var(--cubic);
   }
 
   &__icon {
@@ -203,8 +205,7 @@ header {
     &:hover,
     &:focus {
       color: var(--title-color);
-      /*box-shadow: 0px 1px 1px rgba(210, 20, 67, 0.12), 0px 4px 4px rgba(210, 20, 67, 0.06);
-      border-radius: 50px;*/
+      transition: color 250ms var(--cubic);
     }
   }
   .menu__link--active {
