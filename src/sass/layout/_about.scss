@@ -1,6 +1,6 @@
 // ==============секция AboutUS=======================//
 
-.about {
+#about {
   background-color: rgba(255, 245, 246, 1);
 }
 .about__container {
@@ -251,9 +251,10 @@
   pointer-events: none;
     //  overflow-y: auto;
     //  overflow: scroll;
+    overflow-y: scroll;
 }
 
-.about-modal__wrapper:target {
+.about-modal__wrapper.is-hidden {
   display: block;
   pointer-events: auto;
 }
@@ -262,7 +263,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-   overflow: scroll;
+  overflow-y: scroll;
   transform: translate(-50%, -50%) scale(1);
 
   padding: 30px;
@@ -278,11 +279,10 @@
 }
 
 .about-modal__icon {
-  position: absolute;
+ 
   width: 16px;
   height: 16px;
-  top: 10px;
-  right: 10px;
+  
 
   fill: #000;
   cursor: pointer;
@@ -294,6 +294,13 @@
   &:focus {
     fill: var(--accent-color);
   }
+}
+.about-modal__btn{
+ position: absolute;
+ top: 10px;
+right: 10px;
+background-color: transparent;
+border: none;
 }
 .about-modal__tumb {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)),
