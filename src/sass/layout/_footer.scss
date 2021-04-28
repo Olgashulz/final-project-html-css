@@ -14,7 +14,7 @@
       padding-top: 82px;
       padding-bottom: 97px;
     }
-  }
+     }
   &__wrapper {
     border-bottom: 1px solid #e1e1e1;
   }
@@ -81,6 +81,9 @@
       @include font-DM-Sans(15, 29, 700);
     }
   }
+   &__link:hover{
+      animation: bounce 500ms;
+    }
 }
 
 .social-list {
