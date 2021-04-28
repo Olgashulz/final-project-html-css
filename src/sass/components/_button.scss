@@ -2,10 +2,12 @@
   @extend %button;
   color: var(--accent-color);
   background-color: #ffffff;
+  transition: background-color 250ms var(--cubic);
 
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    transition: background-color 250ms var(--cubic);
   }
 }
 
@@ -13,10 +15,12 @@
   @extend %button;
   background-color: #d41443;
   color: #ffffff;
+  transition: background-color 250ms var(--cubic);
 
   &:hover,
   &:focus {
     background-color: #c7133e;
+    transition: background-color 250ms var(--cubic);
   }
 }
 
