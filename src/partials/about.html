@@ -3,7 +3,7 @@
 <section id="about">
   <div class="container about__container">
     <p class="about__subtitle subtitle">tradition and love</p>
-    <h1 class="about__title title">how it’s made?</h1>
+    <h2 class="about__title title">how it’s made?</h2>
     <div class="about__box">
       <picture class="about__picture">
         <source
@@ -54,22 +54,21 @@
 
         <button
           type="button"
-          class="about__button button-light"
-          onclick="window.location.href = '#about__open-modal';"
-        >
+          class="about__button button-light" data-modal-about-open
+         >
           Read more
-          <svg class="about__icon" width="12" height="12">
+          <svg class="about__icon" width="12" height="12" >
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
           </svg>
         </button>
 
-        <div id="about__open-modal" class="about-modal__wrapper">
+        <div class="about-modal__wrapper" data-modal-about>
           <div class="about-modal">
-            <a href="#close">
+            <button type="button" class="about-modal__btn" data-modal-about-close>
               <svg class="about-modal__icon">
                 <use href="./images/sprite.svg#icon-Vector"></use>
               </svg>
-            </a>
+            </button>
             <div class="about-modal__tumb">
               <div class="about-modal__titles">
                 <p class="about-modal__subtitle subtitle">tradition</p>
@@ -83,7 +82,22 @@
               eveniet nobis veritatis? Neque eum hic quisquam, laborum accusantium vitae. Itaque
               aliquam ea voluptatum libero!
             </p>
-                        <p class="about-modal__text">              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum fugiat, eum
+            <p class="about-modal__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum fugiat, eum
+              voluptas, nulla, at minus ab placeat eius exercitationem tenetur neque? Illo deleniti
+              asperiores laborum! Molestias autem hic ea magni delectus possimus facilis expedita
+              eveniet nobis veritatis? Neque eum hic quisquam, laborum accusantium vitae. Itaque
+              aliquam ea voluptatum libero!
+            </p>
+            <p class="about-modal__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum fugiat, eum
+              voluptas, nulla, at minus ab placeat eius exercitationem tenetur neque? Illo deleniti
+              asperiores laborum! Molestias autem hic ea magni delectus possimus facilis expedita
+              eveniet nobis veritatis? Neque eum hic quisquam, laborum accusantium vitae. Itaque
+              aliquam ea voluptatum libero!
+            </p>
+            <p class="about-modal__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum fugiat, eum
               voluptas, nulla, at minus ab placeat eius exercitationem tenetur neque? Illo deleniti
               asperiores laborum! Molestias autem hic ea magni delectus possimus facilis expedita
               eveniet nobis veritatis? Neque eum hic quisquam, laborum accusantium vitae. Itaque
