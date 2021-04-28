@@ -10,3 +10,21 @@
     opacity:1;
     transition: opacity 250ms var(--cubic);
 }
+.backdrop__map{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(235, 203, 221, 0.5);  
+
+    opacity:1;
+    transition: opacity 250ms var(--cubic);
+    z-index: 500;
+}
+
+.backdrop__map.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+

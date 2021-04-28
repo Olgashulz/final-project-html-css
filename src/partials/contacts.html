@@ -78,25 +78,30 @@
         </div>
       </li>
     </ul>
-    <div class="contacts__buttons">
-      <button class="button-pink contacts__button" type="button">
-        <a href="#" class="hero__link link">
+    <div class="contacts__buttons" >
+      <button class="button-pink contacts__button" type="button" data-modal-open>
           Our Locations
           <svg class="contacts__icon contacts__icon--light">
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
           </svg>
-        </a>
       </button>
-      <button class="button-light contacts__button" type="button">
-        <a href="https://docs.google.com/document/d/116IBW-JZq1vNtFdcCbcTEKWb8i7m40ip4d7K571x-fA/edit?usp=sharing" class="link" target="_blank">
+      <a class="button-light contacts__button link"
+       href="https://docs.google.com/document/d/116IBW-JZq1vNtFdcCbcTEKWb8i7m40ip4d7K571x-fA/edit?usp=sharing" 
+       class="link" target="_blank" rel="noopener noreferrer">
           Franchise
           <svg class="contacts__icon">
             <use href="./images/sprite.svg#icon-keyboard-right"></use>
           </svg>
         </a>
-      </button>
     </div>
+    <!--modal map-->
+    <div class="backdrop__map is-hidden" data-modal>
     <div class="modal-map">
+      <button type="button" class="modal-close-btn modal-close-btn--map  " data-modal-close>
+        <svg class="modal-close-btn__icon  modal-close-btn__icon--map" width="16px" height="16px">
+        <use href="./images/sprite.svg#icon-Vector"></use>
+        </svg>
+    </button>
             <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794508425036!2d30.536197115696858!3d50.4265806794721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1618491472731!5m2!1sru!2sua"
       width="100%"
@@ -106,5 +111,6 @@
       loading="lazy"
     ></iframe>
     </div>
+  </div>
   </div>
 </section>
