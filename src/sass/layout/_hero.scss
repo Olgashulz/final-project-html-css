@@ -240,8 +240,10 @@
   @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
   width: 63px;
   height: 24px;
-  align-items: center;
   margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero__button-light {
@@ -249,7 +251,9 @@
   @include font-DM-Sans($fs: 8, $lh: 10, $fw: 400);
   width: 83px;
   height: 24px;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero__button-arrow-right {
