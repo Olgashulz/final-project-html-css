@@ -40,7 +40,7 @@
     />
   </head>
   <body>
-    <!-- Это мои паршаилы -->
+    <!-- паршаилы -->
     <include src="./partials/header.html"></include>
     <include src="./partials/modal.html"></include>
     <include src="./partials/hero.html"></include>
@@ -49,8 +49,6 @@
     <include src="./partials/reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-
-    <!-- <include src="./partials/contacts.html"></include> -->
     <!-- Конец -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
@@ -64,95 +62,7 @@
     <script src="./js/scroll-from-mobile-menu-close.js"></script>
     <script src="./js/scroll-from-mobile-menu-close-backdrop.js"></script>
     <script src="./js/scroll-from-mobile-menu-button.js"></script>
+    <script src="./js/open-modal-map.js"></script>
 
-    <!-- скрипт для плавного скрола мобильного меню + закрытиє бекдропа -->
-    <!-- <script>
-      $('a.scrollto').click(function () {
-        var elementClick = $(this).attr('href');
-        var destination = $(elementClick).offset().top;
-        jQuery('html:not(:animated),body:not(:animated)').animate(
-          {
-            scrollTop: destination,
-          },
-          800,
-        );
-        document.querySelector('[data-menu-backdrop]').classList.toggle('is-open-backdrop');
-        return false;
-      });
-    </script> -->
-
-    <!-- скрипт для плавного скрола мобильного меню + закрытие меню -->
-
-    <!-- <script>
-      $('a.scrollto').click(function () {
-        var elementClick = $(this).attr('href');
-        var destination = $(elementClick).offset().top;
-        jQuery('html:not(:animated),body:not(:animated)').animate(
-          {
-            scrollTop: destination,
-          },
-          800,
-        );
-        document.querySelector('[data-menu]').classList.toggle('is-open');
-        return false;
-      });
-    </script> -->
-
-    <!-- скрипт для плавного скрола мобильного меню + вернуть кнопки меню -->
-
-    <!-- <script>
-      $('a.scrollto').click(function () {
-        var elementClick = $(this).attr('href');
-        var destination = $(elementClick).offset().top;
-        jQuery('html:not(:animated),body:not(:animated)').animate(
-          {
-            scrollTop: destination,
-          },
-          800,
-        );
-        document.querySelector('[data-menu-daskt-nav]').classList.toggle('is-open-nav');
-        return false;
-      });
-    </script> -->
-
-    <!-- скрипт для плавного скрола только для блока navigation -->
-    <!-- <script type="text/javascript">
-      $(document).ready(function () {
-        $('#menu, #hero__buttons').on('click', 'a', function (event) {
-          event.preventDefault();
-          var id = $(this).attr('href'),
-            top = $(id).offset().top;
-          $('body,html').animate({ scrollTop: top }, 800);
-        });
-      });
-    </script> -->
-
-    <!-- Скрипт для слайдера -->
-    <!-- <script>
-      $(function () {
-        $('.slaider').slick({
-          arrows: false,
-          dots: true,
-          cssEase: 'linear',
-          autoplay: false,
-          autoplaySpeed: 0,
-        });
-      });
-    </script> -->
-
-    <!-- скрипт для кнопки вверх -->
-
-<!-- <script type="text/javascript"> 
-$(function() { 
-$(window).scroll(function() { 
-if($(this).scrollTop() != 0) { 
-$('#toTop').fadeIn(); 
-} else { 
-$('#toTop').fadeOut(); 
-} }); 
-$('#toTop').click(function() { 
-$('body,html').animate({scrollTop:0},800); 
-}); }); 
-</script> -->
   </body>
 </html>

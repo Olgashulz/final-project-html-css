@@ -21,6 +21,7 @@
     opacity:1;
     transition: opacity 250ms var(--cubic);
     z-index: 500;
+         overflow: scroll;
 }
 
 .backdrop__map.is-hidden {

@@ -294,10 +294,10 @@
   left: 50%;
   width: 90vw;
   height: 90vh;
+  max-width: 945px;
   transform: translate(-50%, -50%);
-
-
-  padding: 20px;
+  
+  padding: 10px;
   border: 10px solid #d21443;
   background-color: #ffffff;
 
@@ -306,6 +306,14 @@
   -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
   margin: 0, auto;
+
+   @media screen and (min-width: 425px) {
+      height: 400px;
+      padding: 20px;
+    }
+       @media screen and (min-width: 1180px) {
+     max-width: 900px;
+    }
 }
 
 .modal-close-btn--map{
@@ -314,7 +322,7 @@
 }
 
 .modal-close-btn__icon--map{
-  fill: grey;
+  fill: #000;
 }
   .modal-close-btn--map:hover .modal-close-btn__icon--map
   .modal-close-btn--map:focus .modal-close-btn__icon--map{
@@ -322,12 +330,12 @@
   }
 
 
-@media screen and (min-width: 1200px) {
-.modal-map {
-  max-width: 1600px;
-  max-height: 1600px;
-}
-}
+// @media screen and (min-width: 1200px) {
+// .modal-map {
+//   max-width: 1600px;
+//   max-height: 1600px;
+// }
+// }
 
 
 
